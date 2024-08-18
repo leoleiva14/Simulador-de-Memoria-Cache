@@ -1,0 +1,3149 @@
+1. Caché de un único nivel
+
+
+Recolecte los datos de todos los traces al utilizar un caché L1 de 32kB, asociatividad en 8-way,
+el tamaño de bloque en 64B y la política de reemplazo en LRU. Asuma que el hit time de este
+caché es 4 ciclos de reloj, mientras que el miss penalty son 500 ciclos.
+Incluya en su reporte una tabla con el AMAT de cada una de los traces para esta configuración.
+Calcule el AMAT promedio, usando media geométrica, a través de todos los traces.  ** Falta
+
+Archivos de traza encontrados: 27
+Procesando archivo: 410.bwaves-1963B.trace.txt.gz
+AMAT para 410.bwaves-1963B.trace.txt.gz: 12.189 ciclos
+        Total de misses:                16378 (1.638%)
+        Misses de lectura:              15953 (1.630%)
+        Misses de escritura:            425 (1.978%)
+        Hit rate:                       0.984
+        Miss rate:                      0.016
+Procesando archivo: 473.astar-153B.trace.txt.gz
+AMAT para 473.astar-153B.trace.txt.gz: 6.325 ciclos
+        Total de misses:                4651 (0.465%)
+        Misses de lectura:              4176 (0.456%)
+        Misses de escritura:            475 (0.560%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Procesando archivo: 436.cactusADM-1804B.trace.txt.gz
+AMAT para 436.cactusADM-1804B.trace.txt.gz: 7.242 ciclos
+        Total de misses:                6485 (0.648%)
+        Misses de lectura:              5972 (0.642%)
+        Misses de escritura:            513 (0.729%)
+        Hit rate:                       0.994
+        Miss rate:                      0.006
+Procesando archivo: 482.sphinx3-1100B.trace.txt.gz
+AMAT para 482.sphinx3-1100B.trace.txt.gz: 10.605 ciclos
+        Total de misses:                13211 (1.321%)
+        Misses de lectura:              13002 (1.316%)
+        Misses de escritura:            209 (1.719%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Procesando archivo: 450.soplex-247B.trace.txt.gz
+AMAT para 450.soplex-247B.trace.txt.gz: 38.553 ciclos
+        Total de misses:                69106 (6.911%)
+        Misses de lectura:              60821 (6.384%)
+        Misses de escritura:            8285 (17.500%)
+        Hit rate:                       0.931
+        Miss rate:                      0.069
+Procesando archivo: 433.milc-127B.trace.txt.gz
+AMAT para 433.milc-127B.trace.txt.gz: 15.102 ciclos
+        Total de misses:                22205 (2.220%)
+        Misses de lectura:              17809 (1.854%)
+        Misses de escritura:            4396 (11.109%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Procesando archivo: 416.gamess-875B.trace.txt.gz
+AMAT para 416.gamess-875B.trace.txt.gz: 10.746 ciclos
+        Total de misses:                13492 (1.349%)
+        Misses de lectura:              10308 (1.101%)
+        Misses de escritura:            3184 (5.009%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Procesando archivo: 429.mcf-184B.trace.txt.gz
+AMAT para 429.mcf-184B.trace.txt.gz: 57.879 ciclos
+        Total de misses:                107758 (10.776%)
+        Misses de lectura:              107525 (10.829%)
+        Misses de escritura:            233 (3.280%)
+        Hit rate:                       0.892
+        Miss rate:                      0.108
+Procesando archivo: 454.calculix-104B.trace.txt.gz
+AMAT para 454.calculix-104B.trace.txt.gz: 4.214 ciclos
+        Total de misses:                428 (0.043%)
+        Misses de lectura:              403 (0.041%)
+        Misses de escritura:            25 (0.402%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Procesando archivo: 445.gobmk-17B.trace.txt.gz
+AMAT para 445.gobmk-17B.trace.txt.gz: 11.519 ciclos
+        Total de misses:                15038 (1.504%)
+        Misses de lectura:              11758 (1.325%)
+        Misses de escritura:            3280 (2.912%)
+        Hit rate:                       0.985
+        Miss rate:                      0.015
+Procesando archivo: 459.GemsFDTD-1169B.trace.txt.gz
+AMAT para 459.GemsFDTD-1169B.trace.txt.gz: 13.104 ciclos
+        Total de misses:                18209 (1.821%)
+        Misses de lectura:              18209 (1.919%)
+        Misses de escritura:            0 (0.000%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Procesando archivo: 444.namd-120B.trace.txt.gz
+AMAT para 444.namd-120B.trace.txt.gz: 6.668 ciclos
+        Total de misses:                5336 (0.534%)
+        Misses de lectura:              5126 (0.527%)
+        Misses de escritura:            210 (0.785%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Procesando archivo: 483.xalancbmk-127B.trace.txt.gz
+AMAT para 483.xalancbmk-127B.trace.txt.gz: 14.882 ciclos
+        Total de misses:                21764 (2.176%)
+        Misses de lectura:              21761 (2.218%)
+        Misses de escritura:            3 (0.016%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Procesando archivo: 458.sjeng-1088B.trace.txt.gz
+AMAT para 458.sjeng-1088B.trace.txt.gz: 8.563 ciclos
+        Total de misses:                9126 (0.913%)
+        Misses de lectura:              7823 (0.827%)
+        Misses de escritura:            1303 (2.395%)
+        Hit rate:                       0.991
+        Miss rate:                      0.009
+Procesando archivo: 400.perlbench-41B.trace.txt.gz
+AMAT para 400.perlbench-41B.trace.txt.gz: 4.118 ciclos
+        Total de misses:                236 (0.024%)
+        Misses de lectura:              214 (0.024%)
+        Misses de escritura:            22 (0.020%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Procesando archivo: 401.bzip2-226B.trace.txt.gz
+AMAT para 401.bzip2-226B.trace.txt.gz: 13.499 ciclos
+        Total de misses:                18999 (1.900%)
+        Misses de lectura:              18939 (2.036%)
+        Misses de escritura:            60 (0.086%)
+        Hit rate:                       0.981
+        Miss rate:                      0.019
+Procesando archivo: 471.omnetpp-188B.trace.txt.gz
+AMAT para 471.omnetpp-188B.trace.txt.gz: 22.909 ciclos
+        Total de misses:                37818 (3.782%)
+        Misses de lectura:              34393 (3.938%)
+        Misses de escritura:            3425 (2.706%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Procesando archivo: 456.hmmer-191B.trace.txt.gz
+AMAT para 456.hmmer-191B.trace.txt.gz: 6.415 ciclos
+        Total de misses:                4830 (0.483%)
+        Misses de lectura:              3102 (0.340%)
+        Misses de escritura:            1728 (1.965%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Procesando archivo: 465.tonto-1769B.trace.txt.gz
+AMAT para 465.tonto-1769B.trace.txt.gz: 18.158 ciclos
+        Total de misses:                28316 (2.832%)
+        Misses de lectura:              19739 (2.119%)
+        Misses de escritura:            8577 (12.502%)
+        Hit rate:                       0.972
+        Miss rate:                      0.028
+Procesando archivo: 481.wrf-1170B.trace.txt.gz
+AMAT para 481.wrf-1170B.trace.txt.gz: 6.102 ciclos
+        Total de misses:                4204 (0.420%)
+        Misses de lectura:              3734 (0.383%)
+        Misses de escritura:            470 (1.966%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Procesando archivo: 435.gromacs-111B.trace.txt.gz
+AMAT para 435.gromacs-111B.trace.txt.gz: 6.386 ciclos
+        Total de misses:                4773 (0.477%)
+        Misses de lectura:              4746 (0.529%)
+        Misses de escritura:            27 (0.026%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Procesando archivo: 403.gcc-16B.trace.txt.gz
+AMAT para 403.gcc-16B.trace.txt.gz: 15.243 ciclos
+        Total de misses:                22485 (2.248%)
+        Misses de lectura:              18066 (1.955%)
+        Misses de escritura:            4419 (5.822%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Procesando archivo: 453.povray-887B.trace.txt.gz
+AMAT para 453.povray-887B.trace.txt.gz: 17.530 ciclos
+        Total de misses:                27060 (2.706%)
+        Misses de lectura:              25090 (2.768%)
+        Misses de escritura:            1970 (2.103%)
+        Hit rate:                       0.973
+        Miss rate:                      0.027
+Procesando archivo: 437.leslie3d-134B.trace.txt.gz
+AMAT para 437.leslie3d-134B.trace.txt.gz: 6.042 ciclos
+        Total de misses:                4084 (0.408%)
+        Misses de lectura:              2128 (0.216%)
+        Misses de escritura:            1956 (12.713%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Procesando archivo: 470.lbm-1274B.trace.txt.gz
+AMAT para 470.lbm-1274B.trace.txt.gz: 23.189 ciclos
+        Total de misses:                38377 (3.838%)
+        Misses de lectura:              7901 (0.856%)
+        Misses de escritura:            30476 (39.434%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Procesando archivo: 464.h264ref-30B.trace.txt.gz
+AMAT para 464.h264ref-30B.trace.txt.gz: 4.305 ciclos
+        Total de misses:                610 (0.061%)
+        Misses de lectura:              227 (0.023%)
+        Misses de escritura:            383 (1.838%)
+        Hit rate:                       0.999
+        Miss rate:                      0.001
+Procesando archivo: 462.libquantum-1343B.trace.txt.gz
+AMAT para 462.libquantum-1343B.trace.txt.gz: 12.892 ciclos
+        Total de misses:                17784 (1.778%)
+        Misses de lectura:              17784 (1.786%)
+        Misses de escritura:            0 (0.000%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+
+Resultados de AMAT para cada archivo de traza:
+Archivo de Traza               AMAT (ciclos)
+410.bwaves-1963B.trace.txt.gz  12.189
+473.astar-153B.trace.txt.gz    6.325
+436.cactusADM-1804B.trace.txt.gz 7.242
+482.sphinx3-1100B.trace.txt.gz 10.605
+450.soplex-247B.trace.txt.gz   38.553
+433.milc-127B.trace.txt.gz     15.102
+416.gamess-875B.trace.txt.gz   10.746
+429.mcf-184B.trace.txt.gz      57.879
+454.calculix-104B.trace.txt.gz 4.214
+445.gobmk-17B.trace.txt.gz     11.519
+459.GemsFDTD-1169B.trace.txt.gz 13.104
+444.namd-120B.trace.txt.gz     6.668
+483.xalancbmk-127B.trace.txt.gz 14.882
+458.sjeng-1088B.trace.txt.gz   8.563
+400.perlbench-41B.trace.txt.gz 4.118
+401.bzip2-226B.trace.txt.gz    13.499
+471.omnetpp-188B.trace.txt.gz  22.909
+456.hmmer-191B.trace.txt.gz    6.415
+465.tonto-1769B.trace.txt.gz   18.158
+481.wrf-1170B.trace.txt.gz     6.102
+435.gromacs-111B.trace.txt.gz  6.386
+403.gcc-16B.trace.txt.gz       15.243
+453.povray-887B.trace.txt.gz   17.530
+437.leslie3d-134B.trace.txt.gz 6.042
+470.lbm-1274B.trace.txt.gz     23.189
+464.h264ref-30B.trace.txt.gz   4.305
+462.libquantum-1343B.trace.txt.gz 12.892
+
+
+2. Caché con dos niveles
+
+
+Utilizando el mismo caché L1 descrito en la sección anterior agregue ahora un caché L2 a la
+simulación. Utilizando bloques de 64B y LRU como política de reemplazo varíe la capacidad y
+la asociatividad del caché y encuentre la configuración que minimiza el AMAT. Debe probar
+todas las combinaciones de:
+● Capacidad de L2: 64kB y 128kB
+● Asociatividad de L2: 8-way y 16-way
+Asuma que el hit time de L1 es 4 ciclos de reloj, el de L2 es 12 ciclos y el miss penalty son 500
+ciclos.
+Incluya en su reporte una tabla con el AMAT promedio, usando media geométrica, (obtenido a
+través de todos los traces) para cada una de las configuraciones solicitadas. **Falta
+
+
+Variaciones:
+
+a)    # L2: 64kB, 8-way
+
+
+Archivos de traza encontrados: 27
+Procesando archivo: 410.bwaves-1963B.trace.txt.gz
+AMAT para 410.bwaves-1963B.trace.txt.gz: 10.977 ciclos
+Estadísticas del caché L1:
+        Total de misses:                16378 (1.638%)
+        Hit rate:                       0.984
+        Miss rate:                      0.016
+Estadísticas del caché L2:
+        Total de misses:                13561 (82.800%)
+        Hit rate:                       0.172
+        Miss rate:                      0.828
+Procesando archivo: 473.astar-153B.trace.txt.gz
+AMAT para 473.astar-153B.trace.txt.gz: 5.919 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4651 (0.465%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                3726 (80.112%)
+        Hit rate:                       0.199
+        Miss rate:                      0.801
+Procesando archivo: 436.cactusADM-1804B.trace.txt.gz
+AMAT para 436.cactusADM-1804B.trace.txt.gz: 6.225 ciclos
+Estadísticas del caché L1:
+        Total de misses:                6485 (0.648%)
+        Hit rate:                       0.994
+        Miss rate:                      0.006
+Estadísticas del caché L2:
+        Total de misses:                4294 (66.214%)
+        Hit rate:                       0.338
+        Miss rate:                      0.662
+Procesando archivo: 482.sphinx3-1100B.trace.txt.gz
+AMAT para 482.sphinx3-1100B.trace.txt.gz: 10.135 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13211 (1.321%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                11952 (90.470%)
+        Hit rate:                       0.095
+        Miss rate:                      0.905
+Procesando archivo: 450.soplex-247B.trace.txt.gz
+AMAT para 450.soplex-247B.trace.txt.gz: 36.108 ciclos
+Estadísticas del caché L1:
+        Total de misses:                69106 (6.911%)
+        Hit rate:                       0.931
+        Miss rate:                      0.069
+Estadísticas del caché L2:
+        Total de misses:                62558 (90.525%)
+        Hit rate:                       0.095
+        Miss rate:                      0.905
+Procesando archivo: 433.milc-127B.trace.txt.gz
+AMAT para 433.milc-127B.trace.txt.gz: 15.332 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22205 (2.220%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                22131 (99.667%)
+        Hit rate:                       0.003
+        Miss rate:                      0.997
+Procesando archivo: 416.gamess-875B.trace.txt.gz
+AMAT para 416.gamess-875B.trace.txt.gz: 5.993 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13492 (1.349%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                3662 (27.142%)
+        Hit rate:                       0.729
+        Miss rate:                      0.271
+Procesando archivo: 429.mcf-184B.trace.txt.gz
+AMAT para 429.mcf-184B.trace.txt.gz: 56.045 ciclos
+Estadísticas del caché L1:
+        Total de misses:                107758 (10.776%)
+        Hit rate:                       0.892
+        Miss rate:                      0.108
+Estadísticas del caché L2:
+        Total de misses:                101503 (94.195%)
+        Hit rate:                       0.058
+        Miss rate:                      0.942
+Procesando archivo: 454.calculix-104B.trace.txt.gz
+AMAT para 454.calculix-104B.trace.txt.gz: 4.214 ciclos
+Estadísticas del caché L1:
+        Total de misses:                428 (0.043%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                418 (97.664%)
+        Hit rate:                       0.023
+        Miss rate:                      0.977
+Procesando archivo: 445.gobmk-17B.trace.txt.gz
+AMAT para 445.gobmk-17B.trace.txt.gz: 6.259 ciclos
+Estadísticas del caché L1:
+        Total de misses:                15038 (1.504%)
+        Hit rate:                       0.985
+        Miss rate:                      0.015
+Estadísticas del caché L2:
+        Total de misses:                4158 (27.650%)
+        Hit rate:                       0.724
+        Miss rate:                      0.276
+Procesando archivo: 459.GemsFDTD-1169B.trace.txt.gz
+AMAT para 459.GemsFDTD-1169B.trace.txt.gz: 13.200 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18209 (1.821%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17963 (98.649%)
+        Hit rate:                       0.014
+        Miss rate:                      0.986
+Procesando archivo: 444.namd-120B.trace.txt.gz
+AMAT para 444.namd-120B.trace.txt.gz: 4.714 ciclos
+Estadísticas del caché L1:
+        Total de misses:                5336 (0.534%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                1299 (24.344%)
+        Hit rate:                       0.757
+        Miss rate:                      0.243
+Procesando archivo: 483.xalancbmk-127B.trace.txt.gz
+AMAT para 483.xalancbmk-127B.trace.txt.gz: 14.809 ciclos
+Estadísticas del caché L1:
+        Total de misses:                21764 (2.176%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                21095 (96.926%)
+        Hit rate:                       0.031
+        Miss rate:                      0.969
+Procesando archivo: 458.sjeng-1088B.trace.txt.gz
+AMAT para 458.sjeng-1088B.trace.txt.gz: 5.259 ciclos
+Estadísticas del caché L1:
+        Total de misses:                9126 (0.913%)
+        Hit rate:                       0.991
+        Miss rate:                      0.009
+Estadísticas del caché L2:
+        Total de misses:                2298 (25.181%)
+        Hit rate:                       0.748
+        Miss rate:                      0.252
+Procesando archivo: 400.perlbench-41B.trace.txt.gz
+AMAT para 400.perlbench-41B.trace.txt.gz: 4.115 ciclos
+Estadísticas del caché L1:
+        Total de misses:                236 (0.024%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                225 (95.339%)
+        Hit rate:                       0.047
+        Miss rate:                      0.953
+Procesando archivo: 401.bzip2-226B.trace.txt.gz
+AMAT para 401.bzip2-226B.trace.txt.gz: 11.014 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18999 (1.900%)
+        Hit rate:                       0.981
+        Miss rate:                      0.019
+Estadísticas del caché L2:
+        Total de misses:                13573 (71.441%)
+        Hit rate:                       0.286
+        Miss rate:                      0.714
+Procesando archivo: 471.omnetpp-188B.trace.txt.gz
+AMAT para 471.omnetpp-188B.trace.txt.gz: 15.569 ciclos
+Estadísticas del caché L1:
+        Total de misses:                37818 (3.782%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                22230 (58.782%)
+        Hit rate:                       0.412
+        Miss rate:                      0.588
+Procesando archivo: 456.hmmer-191B.trace.txt.gz
+AMAT para 456.hmmer-191B.trace.txt.gz: 5.905 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4830 (0.483%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                3694 (76.480%)
+        Hit rate:                       0.235
+        Miss rate:                      0.765
+Procesando archivo: 465.tonto-1769B.trace.txt.gz
+AMAT para 465.tonto-1769B.trace.txt.gz: 18.447 ciclos
+Estadísticas del caché L1:
+        Total de misses:                28316 (2.832%)
+        Hit rate:                       0.972
+        Miss rate:                      0.028
+Estadísticas del caché L2:
+        Total de misses:                28214 (99.640%)
+        Hit rate:                       0.004
+        Miss rate:                      0.996
+Procesando archivo: 481.wrf-1170B.trace.txt.gz
+AMAT para 481.wrf-1170B.trace.txt.gz: 5.714 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4204 (0.420%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                3328 (79.163%)
+        Hit rate:                       0.208
+        Miss rate:                      0.792
+Procesando archivo: 435.gromacs-111B.trace.txt.gz
+AMAT para 435.gromacs-111B.trace.txt.gz: 6.003 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4773 (0.477%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                3892 (81.542%)
+        Hit rate:                       0.185
+        Miss rate:                      0.815
+Procesando archivo: 403.gcc-16B.trace.txt.gz
+AMAT para 403.gcc-16B.trace.txt.gz: 15.170 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22485 (2.248%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                21800 (96.954%)
+        Hit rate:                       0.030
+        Miss rate:                      0.970
+Procesando archivo: 453.povray-887B.trace.txt.gz
+AMAT para 453.povray-887B.trace.txt.gz: 11.196 ciclos
+Estadísticas del caché L1:
+        Total de misses:                27060 (2.706%)
+        Hit rate:                       0.973
+        Miss rate:                      0.027
+Estadísticas del caché L2:
+        Total de misses:                13742 (50.783%)
+        Hit rate:                       0.492
+        Miss rate:                      0.508
+Procesando archivo: 437.leslie3d-134B.trace.txt.gz
+AMAT para 437.leslie3d-134B.trace.txt.gz: 6.056 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4084 (0.408%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                4014 (98.286%)
+        Hit rate:                       0.017
+        Miss rate:                      0.983
+Procesando archivo: 470.lbm-1274B.trace.txt.gz
+AMAT para 470.lbm-1274B.trace.txt.gz: 22.909 ciclos
+Estadísticas del caché L1:
+        Total de misses:                38377 (3.838%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                36896 (96.141%)
+        Hit rate:                       0.039
+        Miss rate:                      0.961
+Procesando archivo: 464.h264ref-30B.trace.txt.gz
+AMAT para 464.h264ref-30B.trace.txt.gz: 4.285 ciclos
+Estadísticas del caché L1:
+        Total de misses:                610 (0.061%)
+        Hit rate:                       0.999
+        Miss rate:                      0.001
+Estadísticas del caché L2:
+        Total de misses:                555 (90.984%)
+        Hit rate:                       0.090
+        Miss rate:                      0.910
+Procesando archivo: 462.libquantum-1343B.trace.txt.gz
+AMAT para 462.libquantum-1343B.trace.txt.gz: 13.071 ciclos
+Estadísticas del caché L1:
+        Total de misses:                17784 (1.778%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17716 (99.618%)
+        Hit rate:                       0.004
+        Miss rate:                      0.996
+
+Resultados de AMAT para cada archivo de traza:
+Archivo de Traza               AMAT (ciclos)
+410.bwaves-1963B.trace.txt.gz  10.977
+473.astar-153B.trace.txt.gz    5.919
+436.cactusADM-1804B.trace.txt.gz 6.225
+482.sphinx3-1100B.trace.txt.gz 10.135
+450.soplex-247B.trace.txt.gz   36.108
+433.milc-127B.trace.txt.gz     15.332
+416.gamess-875B.trace.txt.gz   5.993
+429.mcf-184B.trace.txt.gz      56.045
+454.calculix-104B.trace.txt.gz 4.214
+445.gobmk-17B.trace.txt.gz     6.259
+459.GemsFDTD-1169B.trace.txt.gz 13.200
+444.namd-120B.trace.txt.gz     4.714
+483.xalancbmk-127B.trace.txt.gz 14.809
+458.sjeng-1088B.trace.txt.gz   5.259
+400.perlbench-41B.trace.txt.gz 4.115
+401.bzip2-226B.trace.txt.gz    11.014
+471.omnetpp-188B.trace.txt.gz  15.569
+456.hmmer-191B.trace.txt.gz    5.905
+465.tonto-1769B.trace.txt.gz   18.447
+481.wrf-1170B.trace.txt.gz     5.714
+435.gromacs-111B.trace.txt.gz  6.003
+403.gcc-16B.trace.txt.gz       15.170
+453.povray-887B.trace.txt.gz   11.196
+437.leslie3d-134B.trace.txt.gz 6.056
+470.lbm-1274B.trace.txt.gz     22.909
+464.h264ref-30B.trace.txt.gz   4.285
+462.libquantum-1343B.trace.txt.gz 13.071
+
+
+
+
+
+b)    # L2: 64kB, 16-way
+Archivos de traza encontrados: 27
+Procesando archivo: 410.bwaves-1963B.trace.txt.gz
+AMAT para 410.bwaves-1963B.trace.txt.gz: 10.395 ciclos
+Estadísticas del caché L1:
+        Total de misses:                16378 (1.638%)
+        Hit rate:                       0.984
+        Miss rate:                      0.016
+Estadísticas del caché L2:
+        Total de misses:                12396 (75.687%)
+        Hit rate:                       0.243
+        Miss rate:                      0.757
+Procesando archivo: 473.astar-153B.trace.txt.gz
+AMAT para 473.astar-153B.trace.txt.gz: 5.845 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4651 (0.465%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                3579 (76.951%)
+        Hit rate:                       0.230
+        Miss rate:                      0.770
+Procesando archivo: 436.cactusADM-1804B.trace.txt.gz
+AMAT para 436.cactusADM-1804B.trace.txt.gz: 6.341 ciclos
+Estadísticas del caché L1:
+        Total de misses:                6485 (0.648%)
+        Hit rate:                       0.994
+        Miss rate:                      0.006
+Estadísticas del caché L2:
+        Total de misses:                4526 (69.792%)
+        Hit rate:                       0.302
+        Miss rate:                      0.698
+Procesando archivo: 482.sphinx3-1100B.trace.txt.gz
+AMAT para 482.sphinx3-1100B.trace.txt.gz: 10.124 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13211 (1.321%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                11931 (90.311%)
+        Hit rate:                       0.097
+        Miss rate:                      0.903
+Procesando archivo: 450.soplex-247B.trace.txt.gz
+AMAT para 450.soplex-247B.trace.txt.gz: 36.152 ciclos
+Estadísticas del caché L1:
+        Total de misses:                69106 (6.911%)
+        Hit rate:                       0.931
+        Miss rate:                      0.069
+Estadísticas del caché L2:
+        Total de misses:                62646 (90.652%)
+        Hit rate:                       0.093
+        Miss rate:                      0.907
+Procesando archivo: 433.milc-127B.trace.txt.gz
+AMAT para 433.milc-127B.trace.txt.gz: 15.336 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22205 (2.220%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                22139 (99.703%)
+        Hit rate:                       0.003
+        Miss rate:                      0.997
+Procesando archivo: 416.gamess-875B.trace.txt.gz
+AMAT para 416.gamess-875B.trace.txt.gz: 5.310 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13492 (1.349%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                2296 (17.017%)
+        Hit rate:                       0.830
+        Miss rate:                      0.170
+Procesando archivo: 429.mcf-184B.trace.txt.gz
+AMAT para 429.mcf-184B.trace.txt.gz: 55.928 ciclos
+Estadísticas del caché L1:
+        Total de misses:                107758 (10.776%)
+        Hit rate:                       0.892
+        Miss rate:                      0.108
+Estadísticas del caché L2:
+        Total de misses:                101270 (93.979%)
+        Hit rate:                       0.060
+        Miss rate:                      0.940
+Procesando archivo: 454.calculix-104B.trace.txt.gz
+AMAT para 454.calculix-104B.trace.txt.gz: 4.214 ciclos
+Estadísticas del caché L1:
+        Total de misses:                428 (0.043%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                418 (97.664%)
+        Hit rate:                       0.023
+        Miss rate:                      0.977
+Procesando archivo: 445.gobmk-17B.trace.txt.gz
+AMAT para 445.gobmk-17B.trace.txt.gz: 6.086 ciclos
+Estadísticas del caché L1:
+        Total de misses:                15038 (1.504%)
+        Hit rate:                       0.985
+        Miss rate:                      0.015
+Estadísticas del caché L2:
+        Total de misses:                3811 (25.342%)
+        Hit rate:                       0.747
+        Miss rate:                      0.253
+Procesando archivo: 459.GemsFDTD-1169B.trace.txt.gz
+AMAT para 459.GemsFDTD-1169B.trace.txt.gz: 13.208 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18209 (1.821%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17979 (98.737%)
+        Hit rate:                       0.013
+        Miss rate:                      0.987
+Procesando archivo: 444.namd-120B.trace.txt.gz
+AMAT para 444.namd-120B.trace.txt.gz: 4.642 ciclos
+Estadísticas del caché L1:
+        Total de misses:                5336 (0.534%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                1156 (21.664%)
+        Hit rate:                       0.783
+        Miss rate:                      0.217
+Procesando archivo: 483.xalancbmk-127B.trace.txt.gz
+AMAT para 483.xalancbmk-127B.trace.txt.gz: 14.828 ciclos
+Estadísticas del caché L1:
+        Total de misses:                21764 (2.176%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                21134 (97.105%)
+        Hit rate:                       0.029
+        Miss rate:                      0.971
+Procesando archivo: 458.sjeng-1088B.trace.txt.gz
+AMAT para 458.sjeng-1088B.trace.txt.gz: 5.187 ciclos
+Estadísticas del caché L1:
+        Total de misses:                9126 (0.913%)
+        Hit rate:                       0.991
+        Miss rate:                      0.009
+Estadísticas del caché L2:
+        Total de misses:                2154 (23.603%)
+        Hit rate:                       0.764
+        Miss rate:                      0.236
+Procesando archivo: 400.perlbench-41B.trace.txt.gz
+AMAT para 400.perlbench-41B.trace.txt.gz: 4.115 ciclos
+Estadísticas del caché L1:
+        Total de misses:                236 (0.024%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                225 (95.339%)
+        Hit rate:                       0.047
+        Miss rate:                      0.953
+Procesando archivo: 401.bzip2-226B.trace.txt.gz
+AMAT para 401.bzip2-226B.trace.txt.gz: 11.046 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18999 (1.900%)
+        Hit rate:                       0.981
+        Miss rate:                      0.019
+Estadísticas del caché L2:
+        Total de misses:                13636 (71.772%)
+        Hit rate:                       0.282
+        Miss rate:                      0.718
+Procesando archivo: 471.omnetpp-188B.trace.txt.gz
+AMAT para 471.omnetpp-188B.trace.txt.gz: 15.234 ciclos
+Estadísticas del caché L1:
+        Total de misses:                37818 (3.782%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                21560 (57.010%)
+        Hit rate:                       0.430
+        Miss rate:                      0.570
+Procesando archivo: 456.hmmer-191B.trace.txt.gz
+AMAT para 456.hmmer-191B.trace.txt.gz: 5.907 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4830 (0.483%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                3698 (76.563%)
+        Hit rate:                       0.234
+        Miss rate:                      0.766
+Procesando archivo: 465.tonto-1769B.trace.txt.gz
+AMAT para 465.tonto-1769B.trace.txt.gz: 18.449 ciclos
+Estadísticas del caché L1:
+        Total de misses:                28316 (2.832%)
+        Hit rate:                       0.972
+        Miss rate:                      0.028
+Estadísticas del caché L2:
+        Total de misses:                28218 (99.654%)
+        Hit rate:                       0.003
+        Miss rate:                      0.997
+Procesando archivo: 481.wrf-1170B.trace.txt.gz
+AMAT para 481.wrf-1170B.trace.txt.gz: 5.717 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4204 (0.420%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                3334 (79.305%)
+        Hit rate:                       0.207
+        Miss rate:                      0.793
+Procesando archivo: 435.gromacs-111B.trace.txt.gz
+AMAT para 435.gromacs-111B.trace.txt.gz: 5.988 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4773 (0.477%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                3861 (80.893%)
+        Hit rate:                       0.191
+        Miss rate:                      0.809
+Procesando archivo: 403.gcc-16B.trace.txt.gz
+AMAT para 403.gcc-16B.trace.txt.gz: 15.173 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22485 (2.248%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                21806 (96.980%)
+        Hit rate:                       0.030
+        Miss rate:                      0.970
+Procesando archivo: 453.povray-887B.trace.txt.gz
+AMAT para 453.povray-887B.trace.txt.gz: 10.980 ciclos
+Estadísticas del caché L1:
+        Total de misses:                27060 (2.706%)
+        Hit rate:                       0.973
+        Miss rate:                      0.027
+Estadísticas del caché L2:
+        Total de misses:                13311 (49.191%)
+        Hit rate:                       0.508
+        Miss rate:                      0.492
+Procesando archivo: 437.leslie3d-134B.trace.txt.gz
+AMAT para 437.leslie3d-134B.trace.txt.gz: 6.054 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4084 (0.408%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                4010 (98.188%)
+        Hit rate:                       0.018
+        Miss rate:                      0.982
+Procesando archivo: 470.lbm-1274B.trace.txt.gz
+AMAT para 470.lbm-1274B.trace.txt.gz: 23.017 ciclos
+Estadísticas del caché L1:
+        Total de misses:                38377 (3.838%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                37113 (96.706%)
+        Hit rate:                       0.033
+        Miss rate:                      0.967
+Procesando archivo: 464.h264ref-30B.trace.txt.gz
+AMAT para 464.h264ref-30B.trace.txt.gz: 4.285 ciclos
+Estadísticas del caché L1:
+        Total de misses:                610 (0.061%)
+        Hit rate:                       0.999
+        Miss rate:                      0.001
+Estadísticas del caché L2:
+        Total de misses:                555 (90.984%)
+        Hit rate:                       0.090
+        Miss rate:                      0.910
+Procesando archivo: 462.libquantum-1343B.trace.txt.gz
+AMAT para 462.libquantum-1343B.trace.txt.gz: 13.071 ciclos
+Estadísticas del caché L1:
+        Total de misses:                17784 (1.778%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17716 (99.618%)
+        Hit rate:                       0.004
+        Miss rate:                      0.996
+
+Resultados de AMAT para cada archivo de traza:
+Archivo de Traza               AMAT (ciclos)
+410.bwaves-1963B.trace.txt.gz  10.395
+473.astar-153B.trace.txt.gz    5.845
+436.cactusADM-1804B.trace.txt.gz 6.341
+482.sphinx3-1100B.trace.txt.gz 10.124
+450.soplex-247B.trace.txt.gz   36.152
+433.milc-127B.trace.txt.gz     15.336
+416.gamess-875B.trace.txt.gz   5.310
+429.mcf-184B.trace.txt.gz      55.928
+454.calculix-104B.trace.txt.gz 4.214
+445.gobmk-17B.trace.txt.gz     6.086
+459.GemsFDTD-1169B.trace.txt.gz 13.208
+444.namd-120B.trace.txt.gz     4.642
+483.xalancbmk-127B.trace.txt.gz 14.828
+458.sjeng-1088B.trace.txt.gz   5.187
+400.perlbench-41B.trace.txt.gz 4.115
+401.bzip2-226B.trace.txt.gz    11.046
+471.omnetpp-188B.trace.txt.gz  15.234
+456.hmmer-191B.trace.txt.gz    5.907
+465.tonto-1769B.trace.txt.gz   18.449
+481.wrf-1170B.trace.txt.gz     5.717
+435.gromacs-111B.trace.txt.gz  5.988
+403.gcc-16B.trace.txt.gz       15.173
+453.povray-887B.trace.txt.gz   10.980
+437.leslie3d-134B.trace.txt.gz 6.054
+470.lbm-1274B.trace.txt.gz     23.017
+464.h264ref-30B.trace.txt.gz   4.285
+462.libquantum-1343B.trace.txt.gz 13.071
+
+
+
+
+c)    # L2: 128kB, 8-way
+
+Procesando archivo: 410.bwaves-1963B.trace.txt.gz
+AMAT para 410.bwaves-1963B.trace.txt.gz: 10.184 ciclos
+Estadísticas del caché L1:
+        Total de misses:                16378 (1.638%)
+        Hit rate:                       0.984
+        Miss rate:                      0.016
+Estadísticas del caché L2:
+        Total de misses:                11975 (73.116%)
+        Hit rate:                       0.269
+        Miss rate:                      0.731
+Procesando archivo: 473.astar-153B.trace.txt.gz
+AMAT para 473.astar-153B.trace.txt.gz: 5.500 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4651 (0.465%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2889 (62.116%)
+        Hit rate:                       0.379
+        Miss rate:                      0.621
+Procesando archivo: 436.cactusADM-1804B.trace.txt.gz
+AMAT para 436.cactusADM-1804B.trace.txt.gz: 5.572 ciclos
+Estadísticas del caché L1:
+        Total de misses:                6485 (0.648%)
+        Hit rate:                       0.994
+        Miss rate:                      0.006
+Estadísticas del caché L2:
+        Total de misses:                2989 (46.091%)
+        Hit rate:                       0.539
+        Miss rate:                      0.461
+Procesando archivo: 482.sphinx3-1100B.trace.txt.gz
+AMAT para 482.sphinx3-1100B.trace.txt.gz: 9.732 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13211 (1.321%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                11146 (84.369%)
+        Hit rate:                       0.156
+        Miss rate:                      0.844
+Procesando archivo: 450.soplex-247B.trace.txt.gz
+AMAT para 450.soplex-247B.trace.txt.gz: 32.974 ciclos
+Estadísticas del caché L1:
+        Total de misses:                69106 (6.911%)
+        Hit rate:                       0.931
+        Miss rate:                      0.069
+Estadísticas del caché L2:
+        Total de misses:                56289 (81.453%)
+        Hit rate:                       0.185
+        Miss rate:                      0.815
+Procesando archivo: 433.milc-127B.trace.txt.gz
+AMAT para 433.milc-127B.trace.txt.gz: 15.320 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22205 (2.220%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                22108 (99.563%)
+        Hit rate:                       0.004
+        Miss rate:                      0.996
+Procesando archivo: 416.gamess-875B.trace.txt.gz
+AMAT para 416.gamess-875B.trace.txt.gz: 4.769 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13492 (1.349%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                1214 (8.998%)
+        Hit rate:                       0.910
+        Miss rate:                      0.090
+Procesando archivo: 429.mcf-184B.trace.txt.gz
+AMAT para 429.mcf-184B.trace.txt.gz: 52.771 ciclos
+Estadísticas del caché L1:
+        Total de misses:                107758 (10.776%)
+        Hit rate:                       0.892
+        Miss rate:                      0.108
+Estadísticas del caché L2:
+        Total de misses:                94955 (88.119%)
+        Hit rate:                       0.119
+        Miss rate:                      0.881
+Procesando archivo: 454.calculix-104B.trace.txt.gz
+AMAT para 454.calculix-104B.trace.txt.gz: 4.213 ciclos
+Estadísticas del caché L1:
+        Total de misses:                428 (0.043%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                416 (97.196%)
+        Hit rate:                       0.028
+        Miss rate:                      0.972
+Procesando archivo: 445.gobmk-17B.trace.txt.gz
+AMAT para 445.gobmk-17B.trace.txt.gz: 4.891 ciclos
+Estadísticas del caché L1:
+        Total de misses:                15038 (1.504%)
+        Hit rate:                       0.985
+        Miss rate:                      0.015
+Estadísticas del caché L2:
+        Total de misses:                1421 (9.449%)
+        Hit rate:                       0.906
+        Miss rate:                      0.094
+Procesando archivo: 459.GemsFDTD-1169B.trace.txt.gz
+AMAT para 459.GemsFDTD-1169B.trace.txt.gz: 13.148 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18209 (1.821%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17858 (98.072%)
+        Hit rate:                       0.019
+        Miss rate:                      0.981
+Procesando archivo: 444.namd-120B.trace.txt.gz
+AMAT para 444.namd-120B.trace.txt.gz: 4.560 ciclos
+Estadísticas del caché L1:
+        Total de misses:                5336 (0.534%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                991 (18.572%)
+        Hit rate:                       0.814
+        Miss rate:                      0.186
+Procesando archivo: 483.xalancbmk-127B.trace.txt.gz
+AMAT para 483.xalancbmk-127B.trace.txt.gz: 14.703 ciclos
+Estadísticas del caché L1:
+        Total de misses:                21764 (2.176%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                20883 (95.952%)
+        Hit rate:                       0.040
+        Miss rate:                      0.960
+Procesando archivo: 458.sjeng-1088B.trace.txt.gz
+AMAT para 458.sjeng-1088B.trace.txt.gz: 4.749 ciclos
+Estadísticas del caché L1:
+        Total de misses:                9126 (0.913%)
+        Hit rate:                       0.991
+        Miss rate:                      0.009
+Estadísticas del caché L2:
+        Total de misses:                1279 (14.015%)
+        Hit rate:                       0.860
+        Miss rate:                      0.140
+Procesando archivo: 400.perlbench-41B.trace.txt.gz
+AMAT para 400.perlbench-41B.trace.txt.gz: 4.114 ciclos
+Estadísticas del caché L1:
+        Total de misses:                236 (0.024%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                223 (94.492%)
+        Hit rate:                       0.055
+        Miss rate:                      0.945
+Procesando archivo: 401.bzip2-226B.trace.txt.gz
+AMAT para 401.bzip2-226B.trace.txt.gz: 6.264 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18999 (1.900%)
+        Hit rate:                       0.981
+        Miss rate:                      0.019
+Estadísticas del caché L2:
+        Total de misses:                4073 (21.438%)
+        Hit rate:                       0.786
+        Miss rate:                      0.214
+Procesando archivo: 471.omnetpp-188B.trace.txt.gz
+AMAT para 471.omnetpp-188B.trace.txt.gz: 13.745 ciclos
+Estadísticas del caché L1:
+        Total de misses:                37818 (3.782%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                18582 (49.135%)
+        Hit rate:                       0.509
+        Miss rate:                      0.491
+Procesando archivo: 456.hmmer-191B.trace.txt.gz
+AMAT para 456.hmmer-191B.trace.txt.gz: 5.632 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4830 (0.483%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                3149 (65.197%)
+        Hit rate:                       0.348
+        Miss rate:                      0.652
+Procesando archivo: 465.tonto-1769B.trace.txt.gz
+AMAT para 465.tonto-1769B.trace.txt.gz: 18.427 ciclos
+Estadísticas del caché L1:
+        Total de misses:                28316 (2.832%)
+        Hit rate:                       0.972
+        Miss rate:                      0.028
+Estadísticas del caché L2:
+        Total de misses:                28174 (99.499%)
+        Hit rate:                       0.005
+        Miss rate:                      0.995
+Procesando archivo: 481.wrf-1170B.trace.txt.gz
+AMAT para 481.wrf-1170B.trace.txt.gz: 5.556 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4204 (0.420%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                3012 (71.646%)
+        Hit rate:                       0.284
+        Miss rate:                      0.716
+Procesando archivo: 435.gromacs-111B.trace.txt.gz
+AMAT para 435.gromacs-111B.trace.txt.gz: 5.640 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4773 (0.477%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                3165 (66.310%)
+        Hit rate:                       0.337
+        Miss rate:                      0.663
+Procesando archivo: 403.gcc-16B.trace.txt.gz
+AMAT para 403.gcc-16B.trace.txt.gz: 15.058 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22485 (2.248%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                21577 (95.962%)
+        Hit rate:                       0.040
+        Miss rate:                      0.960
+Procesando archivo: 453.povray-887B.trace.txt.gz
+AMAT para 453.povray-887B.trace.txt.gz: 6.214 ciclos
+Estadísticas del caché L1:
+        Total de misses:                27060 (2.706%)
+        Hit rate:                       0.973
+        Miss rate:                      0.027
+Estadísticas del caché L2:
+        Total de misses:                3778 (13.962%)
+        Hit rate:                       0.860
+        Miss rate:                      0.140
+Procesando archivo: 437.leslie3d-134B.trace.txt.gz
+AMAT para 437.leslie3d-134B.trace.txt.gz: 6.041 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4084 (0.408%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                3983 (97.527%)
+        Hit rate:                       0.025
+        Miss rate:                      0.975
+Procesando archivo: 470.lbm-1274B.trace.txt.gz
+AMAT para 470.lbm-1274B.trace.txt.gz: 16.782 ciclos
+Estadísticas del caché L1:
+        Total de misses:                38377 (3.838%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                24643 (64.213%)
+        Hit rate:                       0.358
+        Miss rate:                      0.642
+Procesando archivo: 464.h264ref-30B.trace.txt.gz
+AMAT para 464.h264ref-30B.trace.txt.gz: 4.285 ciclos
+Estadísticas del caché L1:
+        Total de misses:                610 (0.061%)
+        Hit rate:                       0.999
+        Miss rate:                      0.001
+Estadísticas del caché L2:
+        Total de misses:                555 (90.984%)
+        Hit rate:                       0.090
+        Miss rate:                      0.910
+Procesando archivo: 462.libquantum-1343B.trace.txt.gz
+AMAT para 462.libquantum-1343B.trace.txt.gz: 13.053 ciclos
+Estadísticas del caché L1:
+        Total de misses:                17784 (1.778%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17680 (99.415%)
+        Hit rate:                       0.006
+        Miss rate:                      0.994
+
+Resultados de AMAT para cada archivo de traza:
+Archivo de Traza               AMAT (ciclos)
+410.bwaves-1963B.trace.txt.gz  10.184
+473.astar-153B.trace.txt.gz    5.500
+436.cactusADM-1804B.trace.txt.gz 5.572
+482.sphinx3-1100B.trace.txt.gz 9.732
+450.soplex-247B.trace.txt.gz   32.974
+433.milc-127B.trace.txt.gz     15.320
+416.gamess-875B.trace.txt.gz   4.769
+429.mcf-184B.trace.txt.gz      52.771
+454.calculix-104B.trace.txt.gz 4.213
+445.gobmk-17B.trace.txt.gz     4.891
+459.GemsFDTD-1169B.trace.txt.gz 13.148
+444.namd-120B.trace.txt.gz     4.560
+483.xalancbmk-127B.trace.txt.gz 14.703
+458.sjeng-1088B.trace.txt.gz   4.749
+400.perlbench-41B.trace.txt.gz 4.114
+401.bzip2-226B.trace.txt.gz    6.264
+471.omnetpp-188B.trace.txt.gz  13.745
+456.hmmer-191B.trace.txt.gz    5.632
+465.tonto-1769B.trace.txt.gz   18.427
+481.wrf-1170B.trace.txt.gz     5.556
+435.gromacs-111B.trace.txt.gz  5.640
+403.gcc-16B.trace.txt.gz       15.058
+453.povray-887B.trace.txt.gz   6.214
+437.leslie3d-134B.trace.txt.gz 6.041
+470.lbm-1274B.trace.txt.gz     16.782
+464.h264ref-30B.trace.txt.gz   4.285
+462.libquantum-1343B.trace.txt.gz 13.053
+
+
+
+
+d)    # L2: 128kB, 16-way
+
+Procesando archivo: 410.bwaves-1963B.trace.txt.gz
+AMAT para 410.bwaves-1963B.trace.txt.gz: 10.140 ciclos
+Estadísticas del caché L1:
+        Total de misses:                16378 (1.638%)
+        Hit rate:                       0.984
+        Miss rate:                      0.016
+Estadísticas del caché L2:
+        Total de misses:                11887 (72.579%)
+        Hit rate:                       0.274
+        Miss rate:                      0.726
+Procesando archivo: 473.astar-153B.trace.txt.gz
+AMAT para 473.astar-153B.trace.txt.gz: 5.498 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4651 (0.465%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2884 (62.008%)
+        Hit rate:                       0.380
+        Miss rate:                      0.620
+Procesando archivo: 436.cactusADM-1804B.trace.txt.gz
+AMAT para 436.cactusADM-1804B.trace.txt.gz: 5.601 ciclos
+Estadísticas del caché L1:
+        Total de misses:                6485 (0.648%)
+        Hit rate:                       0.994
+        Miss rate:                      0.006
+Estadísticas del caché L2:
+        Total de misses:                3046 (46.970%)
+        Hit rate:                       0.530
+        Miss rate:                      0.470
+Procesando archivo: 482.sphinx3-1100B.trace.txt.gz
+AMAT para 482.sphinx3-1100B.trace.txt.gz: 9.738 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13211 (1.321%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                11158 (84.460%)
+        Hit rate:                       0.155
+        Miss rate:                      0.845
+Procesando archivo: 450.soplex-247B.trace.txt.gz
+AMAT para 450.soplex-247B.trace.txt.gz: 32.955 ciclos
+Estadísticas del caché L1:
+        Total de misses:                69106 (6.911%)
+        Hit rate:                       0.931
+        Miss rate:                      0.069
+Estadísticas del caché L2:
+        Total de misses:                56252 (81.400%)
+        Hit rate:                       0.186
+        Miss rate:                      0.814
+Procesando archivo: 433.milc-127B.trace.txt.gz
+AMAT para 433.milc-127B.trace.txt.gz: 15.320 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22205 (2.220%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                22107 (99.559%)
+        Hit rate:                       0.004
+        Miss rate:                      0.996
+Procesando archivo: 416.gamess-875B.trace.txt.gz
+AMAT para 416.gamess-875B.trace.txt.gz: 4.692 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13492 (1.349%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                1061 (7.864%)
+        Hit rate:                       0.921
+        Miss rate:                      0.079
+Procesando archivo: 429.mcf-184B.trace.txt.gz
+AMAT para 429.mcf-184B.trace.txt.gz: 52.708 ciclos
+Estadísticas del caché L1:
+        Total de misses:                107758 (10.776%)
+        Hit rate:                       0.892
+        Miss rate:                      0.108
+Estadísticas del caché L2:
+        Total de misses:                94829 (88.002%)
+        Hit rate:                       0.120
+        Miss rate:                      0.880
+Procesando archivo: 454.calculix-104B.trace.txt.gz
+AMAT para 454.calculix-104B.trace.txt.gz: 4.213 ciclos
+Estadísticas del caché L1:
+        Total de misses:                428 (0.043%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                416 (97.196%)
+        Hit rate:                       0.028
+        Miss rate:                      0.972
+Procesando archivo: 445.gobmk-17B.trace.txt.gz
+AMAT para 445.gobmk-17B.trace.txt.gz: 4.869 ciclos
+Estadísticas del caché L1:
+        Total de misses:                15038 (1.504%)
+        Hit rate:                       0.985
+        Miss rate:                      0.015
+Estadísticas del caché L2:
+        Total de misses:                1377 (9.157%)
+        Hit rate:                       0.908
+        Miss rate:                      0.092
+Procesando archivo: 459.GemsFDTD-1169B.trace.txt.gz
+AMAT para 459.GemsFDTD-1169B.trace.txt.gz: 13.146 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18209 (1.821%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17854 (98.050%)
+        Hit rate:                       0.019
+        Miss rate:                      0.981
+Procesando archivo: 444.namd-120B.trace.txt.gz
+AMAT para 444.namd-120B.trace.txt.gz: 4.560 ciclos
+Estadísticas del caché L1:
+        Total de misses:                5336 (0.534%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                991 (18.572%)
+        Hit rate:                       0.814
+        Miss rate:                      0.186
+Procesando archivo: 483.xalancbmk-127B.trace.txt.gz
+AMAT para 483.xalancbmk-127B.trace.txt.gz: 14.700 ciclos
+Estadísticas del caché L1:
+        Total de misses:                21764 (2.176%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                20878 (95.929%)
+        Hit rate:                       0.041
+        Miss rate:                      0.959
+Procesando archivo: 458.sjeng-1088B.trace.txt.gz
+AMAT para 458.sjeng-1088B.trace.txt.gz: 4.707 ciclos
+Estadísticas del caché L1:
+        Total de misses:                9126 (0.913%)
+        Hit rate:                       0.991
+        Miss rate:                      0.009
+Estadísticas del caché L2:
+        Total de misses:                1195 (13.094%)
+        Hit rate:                       0.869
+        Miss rate:                      0.131
+Procesando archivo: 400.perlbench-41B.trace.txt.gz
+AMAT para 400.perlbench-41B.trace.txt.gz: 4.114 ciclos
+Estadísticas del caché L1:
+        Total de misses:                236 (0.024%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                223 (94.492%)
+        Hit rate:                       0.055
+        Miss rate:                      0.945
+Procesando archivo: 401.bzip2-226B.trace.txt.gz
+AMAT para 401.bzip2-226B.trace.txt.gz: 5.912 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18999 (1.900%)
+        Hit rate:                       0.981
+        Miss rate:                      0.019
+Estadísticas del caché L2:
+        Total de misses:                3368 (17.727%)
+        Hit rate:                       0.823
+        Miss rate:                      0.177
+Procesando archivo: 471.omnetpp-188B.trace.txt.gz
+AMAT para 471.omnetpp-188B.trace.txt.gz: 13.713 ciclos
+Estadísticas del caché L1:
+        Total de misses:                37818 (3.782%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                18519 (48.969%)
+        Hit rate:                       0.510
+        Miss rate:                      0.490
+Procesando archivo: 456.hmmer-191B.trace.txt.gz
+AMAT para 456.hmmer-191B.trace.txt.gz: 5.621 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4830 (0.483%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                3126 (64.720%)
+        Hit rate:                       0.353
+        Miss rate:                      0.647
+Procesando archivo: 465.tonto-1769B.trace.txt.gz
+AMAT para 465.tonto-1769B.trace.txt.gz: 18.427 ciclos
+Estadísticas del caché L1:
+        Total de misses:                28316 (2.832%)
+        Hit rate:                       0.972
+        Miss rate:                      0.028
+Estadísticas del caché L2:
+        Total de misses:                28174 (99.499%)
+        Hit rate:                       0.005
+        Miss rate:                      0.995
+Procesando archivo: 481.wrf-1170B.trace.txt.gz
+AMAT para 481.wrf-1170B.trace.txt.gz: 5.556 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4204 (0.420%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                3011 (71.622%)
+        Hit rate:                       0.284
+        Miss rate:                      0.716
+Procesando archivo: 435.gromacs-111B.trace.txt.gz
+AMAT para 435.gromacs-111B.trace.txt.gz: 5.634 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4773 (0.477%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                3154 (66.080%)
+        Hit rate:                       0.339
+        Miss rate:                      0.661
+Procesando archivo: 403.gcc-16B.trace.txt.gz
+AMAT para 403.gcc-16B.trace.txt.gz: 15.056 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22485 (2.248%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                21573 (95.944%)
+        Hit rate:                       0.041
+        Miss rate:                      0.959
+Procesando archivo: 453.povray-887B.trace.txt.gz
+AMAT para 453.povray-887B.trace.txt.gz: 5.582 ciclos
+Estadísticas del caché L1:
+        Total de misses:                27060 (2.706%)
+        Hit rate:                       0.973
+        Miss rate:                      0.027
+Estadísticas del caché L2:
+        Total de misses:                2515 (9.294%)
+        Hit rate:                       0.907
+        Miss rate:                      0.093
+Procesando archivo: 437.leslie3d-134B.trace.txt.gz
+AMAT para 437.leslie3d-134B.trace.txt.gz: 6.041 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4084 (0.408%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                3983 (97.527%)
+        Hit rate:                       0.025
+        Miss rate:                      0.975
+Procesando archivo: 470.lbm-1274B.trace.txt.gz
+AMAT para 470.lbm-1274B.trace.txt.gz: 18.476 ciclos
+Estadísticas del caché L1:
+        Total de misses:                38377 (3.838%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                28031 (73.041%)
+        Hit rate:                       0.270
+        Miss rate:                      0.730
+Procesando archivo: 464.h264ref-30B.trace.txt.gz
+AMAT para 464.h264ref-30B.trace.txt.gz: 4.285 ciclos
+Estadísticas del caché L1:
+        Total de misses:                610 (0.061%)
+        Hit rate:                       0.999
+        Miss rate:                      0.001
+Estadísticas del caché L2:
+        Total de misses:                555 (90.984%)
+        Hit rate:                       0.090
+        Miss rate:                      0.910
+Procesando archivo: 462.libquantum-1343B.trace.txt.gz
+AMAT para 462.libquantum-1343B.trace.txt.gz: 13.053 ciclos
+Estadísticas del caché L1:
+        Total de misses:                17784 (1.778%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17680 (99.415%)
+        Hit rate:                       0.006
+        Miss rate:                      0.994
+
+Resultados de AMAT para cada archivo de traza:
+Archivo de Traza               AMAT (ciclos)
+410.bwaves-1963B.trace.txt.gz  10.140
+473.astar-153B.trace.txt.gz    5.498
+436.cactusADM-1804B.trace.txt.gz 5.601
+482.sphinx3-1100B.trace.txt.gz 9.738
+450.soplex-247B.trace.txt.gz   32.955
+433.milc-127B.trace.txt.gz     15.320
+416.gamess-875B.trace.txt.gz   4.692
+429.mcf-184B.trace.txt.gz      52.708
+454.calculix-104B.trace.txt.gz 4.213
+445.gobmk-17B.trace.txt.gz     4.869
+459.GemsFDTD-1169B.trace.txt.gz 13.146
+444.namd-120B.trace.txt.gz     4.560
+483.xalancbmk-127B.trace.txt.gz 14.700
+458.sjeng-1088B.trace.txt.gz   4.707
+400.perlbench-41B.trace.txt.gz 4.114
+401.bzip2-226B.trace.txt.gz    5.912
+471.omnetpp-188B.trace.txt.gz  13.713
+456.hmmer-191B.trace.txt.gz    5.621
+465.tonto-1769B.trace.txt.gz   18.427
+481.wrf-1170B.trace.txt.gz     5.556
+435.gromacs-111B.trace.txt.gz  5.634
+403.gcc-16B.trace.txt.gz       15.056
+453.povray-887B.trace.txt.gz   5.582
+437.leslie3d-134B.trace.txt.gz 6.041
+470.lbm-1274B.trace.txt.gz     18.476
+464.h264ref-30B.trace.txt.gz   4.285
+462.libquantum-1343B.trace.txt.gz 13.053
+
+
+
+
+3. Presencia de L3
+
+
+
+Utilizando el mismo caché L1 y un L2 de 256kB y asociatividad de 8-ways, agregue un caché
+L3 a la simulación. Utilizando bloques de 64B y LRU como política de reemplazo varíe la
+capacidad y la asociatividad del caché y encuentre la configuración que minimiza el AMAT.
+Debe probar todas las combinaciones de:
+● Capacidad de L3: 512kB y 1024kB
+● Asociatividad de L3: 16-way y 32-way
+Asuma que el hit time de L1 es 4 ciclos de reloj, el de L2 es 12 ciclos, el de L3 es 60 ciclos y el
+miss penalty son 500 ciclos.
+Incluya en su reporte una tabla con el AMAT promedio, usando media geométrica, (obtenido a
+través de todos los traces) para cada una de las configuraciones solicitadas.** Falta
+Ordene los traces de menor a mayor AMAT en el caso de solamente L1. Usando ese orden,
+grafique el AMAT de sólo usar L1, el mejor caso de L1+L2 y el mejor caso de L1+L2+L3. **Falta
+Con base en los resultados obtenidos en los experimentos anteriores, conteste lo siguiente:
+● Analice el comportamiento observado. Discuta cómo varía el AMAT ante cambios en las
+configuraciones (más niveles de caché, más grandes, más asociatividad). **Falta
+
+
+
+a)   Capacidad de L3: 512kB, Asociatividad de L3: 16-way
+
+
+Archivos de traza encontrados: 27
+Procesando archivo: 410.bwaves-1963B.trace.txt.gz
+AMAT para 410.bwaves-1963B.trace.txt.gz: 10.644 ciclos
+Estadísticas del caché L1:
+        Total de misses:                16378 (1.638%)
+        Hit rate:                       0.984
+        Miss rate:                      0.016
+Estadísticas del caché L2:
+        Total de misses:                11571 (70.650%)
+        Hit rate:                       0.294
+        Miss rate:                      0.706
+Estadísticas del caché L3:
+        Total de misses:                11506 (99.438%)
+        Hit rate:                       0.006
+        Miss rate:                      0.994
+Procesando archivo: 473.astar-153B.trace.txt.gz
+AMAT para 473.astar-153B.trace.txt.gz: 5.418 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4651 (0.465%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2518 (54.139%)
+        Hit rate:                       0.459
+        Miss rate:                      0.541
+Estadísticas del caché L3:
+        Total de misses:                2423 (96.227%)
+        Hit rate:                       0.038
+        Miss rate:                      0.962
+Procesando archivo: 436.cactusADM-1804B.trace.txt.gz
+AMAT para 436.cactusADM-1804B.trace.txt.gz: 5.681 ciclos
+Estadísticas del caché L1:
+        Total de misses:                6485 (0.648%)
+        Hit rate:                       0.994
+        Miss rate:                      0.006
+Estadísticas del caché L2:
+        Total de misses:                2934 (45.243%)
+        Hit rate:                       0.548
+        Miss rate:                      0.452
+Estadísticas del caché L3:
+        Total de misses:                2854 (97.273%)
+        Hit rate:                       0.027
+        Miss rate:                      0.973
+Procesando archivo: 482.sphinx3-1100B.trace.txt.gz
+AMAT para 482.sphinx3-1100B.trace.txt.gz: 9.749 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13211 (1.321%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                10491 (79.411%)
+        Hit rate:                       0.206
+        Miss rate:                      0.794
+Estadísticas del caché L3:
+        Total de misses:                9923 (94.586%)
+        Hit rate:                       0.054
+        Miss rate:                      0.946
+Procesando archivo: 450.soplex-247B.trace.txt.gz
+AMAT para 450.soplex-247B.trace.txt.gz: 26.256 ciclos
+Estadísticas del caché L1:
+        Total de misses:                69106 (6.911%)
+        Hit rate:                       0.931
+        Miss rate:                      0.069
+Estadísticas del caché L2:
+        Total de misses:                48090 (69.589%)
+        Hit rate:                       0.304
+        Miss rate:                      0.696
+Estadísticas del caché L3:
+        Total de misses:                37083 (77.112%)
+        Hit rate:                       0.229
+        Miss rate:                      0.771
+Procesando archivo: 433.milc-127B.trace.txt.gz
+AMAT para 433.milc-127B.trace.txt.gz: 16.634 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22205 (2.220%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                22092 (99.491%)
+        Hit rate:                       0.005
+        Miss rate:                      0.995
+Estadísticas del caché L3:
+        Total de misses:                22084 (99.964%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 416.gamess-875B.trace.txt.gz
+AMAT para 416.gamess-875B.trace.txt.gz: 4.749 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13492 (1.349%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                1049 (7.775%)
+        Hit rate:                       0.922
+        Miss rate:                      0.078
+Estadísticas del caché L3:
+        Total de misses:                1049 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 429.mcf-184B.trace.txt.gz
+AMAT para 429.mcf-184B.trace.txt.gz: 49.363 ciclos
+Estadísticas del caché L1:
+        Total de misses:                107758 (10.776%)
+        Hit rate:                       0.892
+        Miss rate:                      0.108
+Estadísticas del caché L2:
+        Total de misses:                88187 (81.838%)
+        Hit rate:                       0.182
+        Miss rate:                      0.818
+Estadísticas del caché L3:
+        Total de misses:                77558 (87.947%)
+        Hit rate:                       0.121
+        Miss rate:                      0.879
+Procesando archivo: 454.calculix-104B.trace.txt.gz
+AMAT para 454.calculix-104B.trace.txt.gz: 4.238 ciclos
+Estadísticas del caché L1:
+        Total de misses:                428 (0.043%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                415 (96.963%)
+        Hit rate:                       0.030
+        Miss rate:                      0.970
+Estadísticas del caché L3:
+        Total de misses:                415 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 445.gobmk-17B.trace.txt.gz
+AMAT para 445.gobmk-17B.trace.txt.gz: 4.950 ciclos
+Estadísticas del caché L1:
+        Total de misses:                15038 (1.504%)
+        Hit rate:                       0.985
+        Miss rate:                      0.015
+Estadísticas del caché L2:
+        Total de misses:                1375 (9.144%)
+        Hit rate:                       0.909
+        Miss rate:                      0.091
+Estadísticas del caché L3:
+        Total de misses:                1374 (99.927%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+Procesando archivo: 459.GemsFDTD-1169B.trace.txt.gz
+AMAT para 459.GemsFDTD-1169B.trace.txt.gz: 14.175 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18209 (1.821%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17806 (97.787%)
+        Hit rate:                       0.022
+        Miss rate:                      0.978
+Estadísticas del caché L3:
+        Total de misses:                17777 (99.837%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 444.namd-120B.trace.txt.gz
+AMAT para 444.namd-120B.trace.txt.gz: 4.619 ciclos
+Estadísticas del caché L1:
+        Total de misses:                5336 (0.534%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                991 (18.572%)
+        Hit rate:                       0.814
+        Miss rate:                      0.186
+Estadísticas del caché L3:
+        Total de misses:                991 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 483.xalancbmk-127B.trace.txt.gz
+AMAT para 483.xalancbmk-127B.trace.txt.gz: 15.852 ciclos
+Estadísticas del caché L1:
+        Total de misses:                21764 (2.176%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                20758 (95.378%)
+        Hit rate:                       0.046
+        Miss rate:                      0.954
+Estadísticas del caché L3:
+        Total de misses:                20690 (99.672%)
+        Hit rate:                       0.003
+        Miss rate:                      0.997
+Procesando archivo: 458.sjeng-1088B.trace.txt.gz
+AMAT para 458.sjeng-1088B.trace.txt.gz: 4.779 ciclos
+Estadísticas del caché L1:
+        Total de misses:                9126 (0.913%)
+        Hit rate:                       0.991
+        Miss rate:                      0.009
+Estadísticas del caché L2:
+        Total de misses:                1195 (13.094%)
+        Hit rate:                       0.869
+        Miss rate:                      0.131
+Estadísticas del caché L3:
+        Total de misses:                1195 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 400.perlbench-41B.trace.txt.gz
+AMAT para 400.perlbench-41B.trace.txt.gz: 4.128 ciclos
+Estadísticas del caché L1:
+        Total de misses:                236 (0.024%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                223 (94.492%)
+        Hit rate:                       0.055
+        Miss rate:                      0.945
+Estadísticas del caché L3:
+        Total de misses:                223 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 401.bzip2-226B.trace.txt.gz
+AMAT para 401.bzip2-226B.trace.txt.gz: 5.555 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18999 (1.900%)
+        Hit rate:                       0.981
+        Miss rate:                      0.019
+Estadísticas del caché L2:
+        Total de misses:                2396 (12.611%)
+        Hit rate:                       0.874
+        Miss rate:                      0.126
+Estadísticas del caché L3:
+        Total de misses:                2367 (98.790%)
+        Hit rate:                       0.012
+        Miss rate:                      0.988
+Procesando archivo: 471.omnetpp-188B.trace.txt.gz
+AMAT para 471.omnetpp-188B.trace.txt.gz: 13.835 ciclos
+Estadísticas del caché L1:
+        Total de misses:                37818 (3.782%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                17313 (45.780%)
+        Hit rate:                       0.542
+        Miss rate:                      0.458
+Estadísticas del caché L3:
+        Total de misses:                16684 (96.367%)
+        Hit rate:                       0.036
+        Miss rate:                      0.964
+Procesando archivo: 456.hmmer-191B.trace.txt.gz
+AMAT para 456.hmmer-191B.trace.txt.gz: 5.593 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4830 (0.483%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2745 (56.832%)
+        Hit rate:                       0.432
+        Miss rate:                      0.568
+Estadísticas del caché L3:
+        Total de misses:                2741 (99.854%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+Procesando archivo: 465.tonto-1769B.trace.txt.gz
+AMAT para 465.tonto-1769B.trace.txt.gz: 16.870 ciclos
+Estadísticas del caché L1:
+        Total de misses:                28316 (2.832%)
+        Hit rate:                       0.972
+        Miss rate:                      0.028
+Estadísticas del caché L2:
+        Total de misses:                27790 (98.142%)
+        Hit rate:                       0.019
+        Miss rate:                      0.981
+Estadísticas del caché L3:
+        Total de misses:                21725 (78.176%)
+        Hit rate:                       0.218
+        Miss rate:                      0.782
+Procesando archivo: 481.wrf-1170B.trace.txt.gz
+AMAT para 481.wrf-1170B.trace.txt.gz: 5.596 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4204 (0.420%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                2760 (65.652%)
+        Hit rate:                       0.343
+        Miss rate:                      0.657
+Estadísticas del caché L3:
+        Total de misses:                2760 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 435.gromacs-111B.trace.txt.gz
+AMAT para 435.gromacs-111B.trace.txt.gz: 5.607 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4773 (0.477%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2812 (58.915%)
+        Hit rate:                       0.411
+        Miss rate:                      0.589
+Estadísticas del caché L3:
+        Total de misses:                2762 (98.222%)
+        Hit rate:                       0.018
+        Miss rate:                      0.982
+Procesando archivo: 403.gcc-16B.trace.txt.gz
+AMAT para 403.gcc-16B.trace.txt.gz: 16.250 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22485 (2.248%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                21448 (95.388%)
+        Hit rate:                       0.046
+        Miss rate:                      0.954
+Estadísticas del caché L3:
+        Total de misses:                21386 (99.711%)
+        Hit rate:                       0.003
+        Miss rate:                      0.997
+Procesando archivo: 453.povray-887B.trace.txt.gz
+AMAT para 453.povray-887B.trace.txt.gz: 5.282 ciclos
+Estadísticas del caché L1:
+        Total de misses:                27060 (2.706%)
+        Hit rate:                       0.973
+        Miss rate:                      0.027
+Estadísticas del caché L2:
+        Total de misses:                1743 (6.441%)
+        Hit rate:                       0.936
+        Miss rate:                      0.064
+Estadísticas del caché L3:
+        Total de misses:                1705 (97.820%)
+        Hit rate:                       0.022
+        Miss rate:                      0.978
+Procesando archivo: 437.leslie3d-134B.trace.txt.gz
+AMAT para 437.leslie3d-134B.trace.txt.gz: 6.270 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4084 (0.408%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                3974 (97.307%)
+        Hit rate:                       0.027
+        Miss rate:                      0.973
+Estadísticas del caché L3:
+        Total de misses:                3966 (99.799%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 470.lbm-1274B.trace.txt.gz
+AMAT para 470.lbm-1274B.trace.txt.gz: 17.095 ciclos
+Estadísticas del caché L1:
+        Total de misses:                38377 (3.838%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                22667 (59.064%)
+        Hit rate:                       0.409
+        Miss rate:                      0.591
+Estadísticas del caché L3:
+        Total de misses:                22549 (99.479%)
+        Hit rate:                       0.005
+        Miss rate:                      0.995
+Procesando archivo: 464.h264ref-30B.trace.txt.gz
+AMAT para 464.h264ref-30B.trace.txt.gz: 4.318 ciclos
+Estadísticas del caché L1:
+        Total de misses:                610 (0.061%)
+        Hit rate:                       0.999
+        Miss rate:                      0.001
+Estadísticas del caché L2:
+        Total de misses:                555 (90.984%)
+        Hit rate:                       0.090
+        Miss rate:                      0.910
+Estadísticas del caché L3:
+        Total de misses:                555 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 462.libquantum-1343B.trace.txt.gz
+AMAT para 462.libquantum-1343B.trace.txt.gz: 14.101 ciclos
+Estadísticas del caché L1:
+        Total de misses:                17784 (1.778%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17664 (99.325%)
+        Hit rate:                       0.007
+        Miss rate:                      0.993
+Estadísticas del caché L3:
+        Total de misses:                17655 (99.949%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+
+Resultados de AMAT para cada archivo de traza:
+Archivo de Traza               AMAT (ciclos)
+410.bwaves-1963B.trace.txt.gz  10.644
+473.astar-153B.trace.txt.gz    5.418
+436.cactusADM-1804B.trace.txt.gz 5.681
+482.sphinx3-1100B.trace.txt.gz 9.749
+450.soplex-247B.trace.txt.gz   26.256
+433.milc-127B.trace.txt.gz     16.634
+416.gamess-875B.trace.txt.gz   4.749
+429.mcf-184B.trace.txt.gz      49.363
+454.calculix-104B.trace.txt.gz 4.238
+445.gobmk-17B.trace.txt.gz     4.950
+459.GemsFDTD-1169B.trace.txt.gz 14.175
+444.namd-120B.trace.txt.gz     4.619
+483.xalancbmk-127B.trace.txt.gz 15.852
+458.sjeng-1088B.trace.txt.gz   4.779
+400.perlbench-41B.trace.txt.gz 4.128
+401.bzip2-226B.trace.txt.gz    5.555
+471.omnetpp-188B.trace.txt.gz  13.835
+456.hmmer-191B.trace.txt.gz    5.593
+465.tonto-1769B.trace.txt.gz   16.870
+481.wrf-1170B.trace.txt.gz     5.596
+435.gromacs-111B.trace.txt.gz  5.607
+403.gcc-16B.trace.txt.gz       16.250
+453.povray-887B.trace.txt.gz   5.282
+437.leslie3d-134B.trace.txt.gz 6.270
+470.lbm-1274B.trace.txt.gz     17.095
+464.h264ref-30B.trace.txt.gz   4.318
+462.libquantum-1343B.trace.txt.gz 14.101
+
+
+b)   Capacidad de L3: 512kB, Asociatividad de L3: 32-way
+
+
+Procesando archivo: 410.bwaves-1963B.trace.txt.gz
+AMAT para 410.bwaves-1963B.trace.txt.gz: 10.631 ciclos
+Estadísticas del caché L1:
+        Total de misses:                16378 (1.638%)
+        Hit rate:                       0.984
+        Miss rate:                      0.016
+Estadísticas del caché L2:
+        Total de misses:                11571 (70.650%)
+        Hit rate:                       0.294
+        Miss rate:                      0.706
+Estadísticas del caché L3:
+        Total de misses:                11480 (99.214%)
+        Hit rate:                       0.008
+        Miss rate:                      0.992
+Procesando archivo: 473.astar-153B.trace.txt.gz
+AMAT para 473.astar-153B.trace.txt.gz: 5.419 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4651 (0.465%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2518 (54.139%)
+        Hit rate:                       0.459
+        Miss rate:                      0.541
+Estadísticas del caché L3:
+        Total de misses:                2424 (96.267%)
+        Hit rate:                       0.037
+        Miss rate:                      0.963
+Procesando archivo: 436.cactusADM-1804B.trace.txt.gz
+AMAT para 436.cactusADM-1804B.trace.txt.gz: 5.669 ciclos
+Estadísticas del caché L1:
+        Total de misses:                6485 (0.648%)
+        Hit rate:                       0.994
+        Miss rate:                      0.006
+Estadísticas del caché L2:
+        Total de misses:                2934 (45.243%)
+        Hit rate:                       0.548
+        Miss rate:                      0.452
+Estadísticas del caché L3:
+        Total de misses:                2830 (96.455%)
+        Hit rate:                       0.035
+        Miss rate:                      0.965
+Procesando archivo: 482.sphinx3-1100B.trace.txt.gz
+AMAT para 482.sphinx3-1100B.trace.txt.gz: 9.709 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13211 (1.321%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                10491 (79.411%)
+        Hit rate:                       0.206
+        Miss rate:                      0.794
+Estadísticas del caché L3:
+        Total de misses:                9842 (93.814%)
+        Hit rate:                       0.062
+        Miss rate:                      0.938
+Procesando archivo: 450.soplex-247B.trace.txt.gz
+AMAT para 450.soplex-247B.trace.txt.gz: 26.186 ciclos
+Estadísticas del caché L1:
+        Total de misses:                69106 (6.911%)
+        Hit rate:                       0.931
+        Miss rate:                      0.069
+Estadísticas del caché L2:
+        Total de misses:                48090 (69.589%)
+        Hit rate:                       0.304
+        Miss rate:                      0.696
+Estadísticas del caché L3:
+        Total de misses:                36942 (76.818%)
+        Hit rate:                       0.232
+        Miss rate:                      0.768
+Procesando archivo: 433.milc-127B.trace.txt.gz
+AMAT para 433.milc-127B.trace.txt.gz: 16.634 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22205 (2.220%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                22092 (99.491%)
+        Hit rate:                       0.005
+        Miss rate:                      0.995
+Estadísticas del caché L3:
+        Total de misses:                22084 (99.964%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 416.gamess-875B.trace.txt.gz
+AMAT para 416.gamess-875B.trace.txt.gz: 4.749 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13492 (1.349%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                1049 (7.775%)
+        Hit rate:                       0.922
+        Miss rate:                      0.078
+Estadísticas del caché L3:
+        Total de misses:                1049 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 429.mcf-184B.trace.txt.gz
+AMAT para 429.mcf-184B.trace.txt.gz: 49.295 ciclos
+Estadísticas del caché L1:
+        Total de misses:                107758 (10.776%)
+        Hit rate:                       0.892
+        Miss rate:                      0.108
+Estadísticas del caché L2:
+        Total de misses:                88187 (81.838%)
+        Hit rate:                       0.182
+        Miss rate:                      0.818
+Estadísticas del caché L3:
+        Total de misses:                77421 (87.792%)
+        Hit rate:                       0.122
+        Miss rate:                      0.878
+Procesando archivo: 454.calculix-104B.trace.txt.gz
+AMAT para 454.calculix-104B.trace.txt.gz: 4.238 ciclos
+Estadísticas del caché L1:
+        Total de misses:                428 (0.043%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                415 (96.963%)
+        Hit rate:                       0.030
+        Miss rate:                      0.970
+Estadísticas del caché L3:
+        Total de misses:                415 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 445.gobmk-17B.trace.txt.gz
+AMAT para 445.gobmk-17B.trace.txt.gz: 4.950 ciclos
+Estadísticas del caché L1:
+        Total de misses:                15038 (1.504%)
+        Hit rate:                       0.985
+        Miss rate:                      0.015
+Estadísticas del caché L2:
+        Total de misses:                1375 (9.144%)
+        Hit rate:                       0.909
+        Miss rate:                      0.091
+Estadísticas del caché L3:
+        Total de misses:                1374 (99.927%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+Procesando archivo: 459.GemsFDTD-1169B.trace.txt.gz
+AMAT para 459.GemsFDTD-1169B.trace.txt.gz: 14.171 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18209 (1.821%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17806 (97.787%)
+        Hit rate:                       0.022
+        Miss rate:                      0.978
+Estadísticas del caché L3:
+        Total de misses:                17768 (99.787%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 444.namd-120B.trace.txt.gz
+AMAT para 444.namd-120B.trace.txt.gz: 4.619 ciclos
+Estadísticas del caché L1:
+        Total de misses:                5336 (0.534%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                991 (18.572%)
+        Hit rate:                       0.814
+        Miss rate:                      0.186
+Estadísticas del caché L3:
+        Total de misses:                991 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 483.xalancbmk-127B.trace.txt.gz
+AMAT para 483.xalancbmk-127B.trace.txt.gz: 15.848 ciclos
+Estadísticas del caché L1:
+        Total de misses:                21764 (2.176%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                20758 (95.378%)
+        Hit rate:                       0.046
+        Miss rate:                      0.954
+Estadísticas del caché L3:
+        Total de misses:                20682 (99.634%)
+        Hit rate:                       0.004
+        Miss rate:                      0.996
+Procesando archivo: 458.sjeng-1088B.trace.txt.gz
+AMAT para 458.sjeng-1088B.trace.txt.gz: 4.779 ciclos
+Estadísticas del caché L1:
+        Total de misses:                9126 (0.913%)
+        Hit rate:                       0.991
+        Miss rate:                      0.009
+Estadísticas del caché L2:
+        Total de misses:                1195 (13.094%)
+        Hit rate:                       0.869
+        Miss rate:                      0.131
+Estadísticas del caché L3:
+        Total de misses:                1195 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 400.perlbench-41B.trace.txt.gz
+AMAT para 400.perlbench-41B.trace.txt.gz: 4.128 ciclos
+Estadísticas del caché L1:
+        Total de misses:                236 (0.024%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                223 (94.492%)
+        Hit rate:                       0.055
+        Miss rate:                      0.945
+Estadísticas del caché L3:
+        Total de misses:                223 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 401.bzip2-226B.trace.txt.gz
+AMAT para 401.bzip2-226B.trace.txt.gz: 5.555 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18999 (1.900%)
+        Hit rate:                       0.981
+        Miss rate:                      0.019
+Estadísticas del caché L2:
+        Total de misses:                2396 (12.611%)
+        Hit rate:                       0.874
+        Miss rate:                      0.126
+Estadísticas del caché L3:
+        Total de misses:                2367 (98.790%)
+        Hit rate:                       0.012
+        Miss rate:                      0.988
+Procesando archivo: 471.omnetpp-188B.trace.txt.gz
+AMAT para 471.omnetpp-188B.trace.txt.gz: 13.808 ciclos
+Estadísticas del caché L1:
+        Total de misses:                37818 (3.782%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                17313 (45.780%)
+        Hit rate:                       0.542
+        Miss rate:                      0.458
+Estadísticas del caché L3:
+        Total de misses:                16631 (96.061%)
+        Hit rate:                       0.039
+        Miss rate:                      0.961
+Procesando archivo: 456.hmmer-191B.trace.txt.gz
+AMAT para 456.hmmer-191B.trace.txt.gz: 5.593 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4830 (0.483%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2745 (56.832%)
+        Hit rate:                       0.432
+        Miss rate:                      0.568
+Estadísticas del caché L3:
+        Total de misses:                2740 (99.818%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 465.tonto-1769B.trace.txt.gz
+AMAT para 465.tonto-1769B.trace.txt.gz: 16.924 ciclos
+Estadísticas del caché L1:
+        Total de misses:                28316 (2.832%)
+        Hit rate:                       0.972
+        Miss rate:                      0.028
+Estadísticas del caché L2:
+        Total de misses:                27790 (98.142%)
+        Hit rate:                       0.019
+        Miss rate:                      0.981
+Estadísticas del caché L3:
+        Total de misses:                21833 (78.564%)
+        Hit rate:                       0.214
+        Miss rate:                      0.786
+Procesando archivo: 481.wrf-1170B.trace.txt.gz
+AMAT para 481.wrf-1170B.trace.txt.gz: 5.596 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4204 (0.420%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                2760 (65.652%)
+        Hit rate:                       0.343
+        Miss rate:                      0.657
+Estadísticas del caché L3:
+        Total de misses:                2760 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 435.gromacs-111B.trace.txt.gz
+AMAT para 435.gromacs-111B.trace.txt.gz: 5.607 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4773 (0.477%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2812 (58.915%)
+        Hit rate:                       0.411
+        Miss rate:                      0.589
+Estadísticas del caché L3:
+        Total de misses:                2762 (98.222%)
+        Hit rate:                       0.018
+        Miss rate:                      0.982
+Procesando archivo: 403.gcc-16B.trace.txt.gz
+AMAT para 403.gcc-16B.trace.txt.gz: 16.247 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22485 (2.248%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                21448 (95.388%)
+        Hit rate:                       0.046
+        Miss rate:                      0.954
+Estadísticas del caché L3:
+        Total de misses:                21380 (99.683%)
+        Hit rate:                       0.003
+        Miss rate:                      0.997
+Procesando archivo: 453.povray-887B.trace.txt.gz
+AMAT para 453.povray-887B.trace.txt.gz: 5.282 ciclos
+Estadísticas del caché L1:
+        Total de misses:                27060 (2.706%)
+        Hit rate:                       0.973
+        Miss rate:                      0.027
+Estadísticas del caché L2:
+        Total de misses:                1743 (6.441%)
+        Hit rate:                       0.936
+        Miss rate:                      0.064
+Estadísticas del caché L3:
+        Total de misses:                1705 (97.820%)
+        Hit rate:                       0.022
+        Miss rate:                      0.978
+Procesando archivo: 437.leslie3d-134B.trace.txt.gz
+AMAT para 437.leslie3d-134B.trace.txt.gz: 6.270 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4084 (0.408%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                3974 (97.307%)
+        Hit rate:                       0.027
+        Miss rate:                      0.973
+Estadísticas del caché L3:
+        Total de misses:                3966 (99.799%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 470.lbm-1274B.trace.txt.gz
+AMAT para 470.lbm-1274B.trace.txt.gz: 17.090 ciclos
+Estadísticas del caché L1:
+        Total de misses:                38377 (3.838%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                22667 (59.064%)
+        Hit rate:                       0.409
+        Miss rate:                      0.591
+Estadísticas del caché L3:
+        Total de misses:                22538 (99.431%)
+        Hit rate:                       0.006
+        Miss rate:                      0.994
+Procesando archivo: 464.h264ref-30B.trace.txt.gz
+AMAT para 464.h264ref-30B.trace.txt.gz: 4.318 ciclos
+Estadísticas del caché L1:
+        Total de misses:                610 (0.061%)
+        Hit rate:                       0.999
+        Miss rate:                      0.001
+Estadísticas del caché L2:
+        Total de misses:                555 (90.984%)
+        Hit rate:                       0.090
+        Miss rate:                      0.910
+Estadísticas del caché L3:
+        Total de misses:                555 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 462.libquantum-1343B.trace.txt.gz
+AMAT para 462.libquantum-1343B.trace.txt.gz: 14.101 ciclos
+Estadísticas del caché L1:
+        Total de misses:                17784 (1.778%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17664 (99.325%)
+        Hit rate:                       0.007
+        Miss rate:                      0.993
+Estadísticas del caché L3:
+        Total de misses:                17655 (99.949%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+
+Resultados de AMAT para cada archivo de traza:
+Archivo de Traza               AMAT (ciclos)
+410.bwaves-1963B.trace.txt.gz  10.631
+473.astar-153B.trace.txt.gz    5.419
+436.cactusADM-1804B.trace.txt.gz 5.669
+482.sphinx3-1100B.trace.txt.gz 9.709
+450.soplex-247B.trace.txt.gz   26.186
+433.milc-127B.trace.txt.gz     16.634
+416.gamess-875B.trace.txt.gz   4.749
+429.mcf-184B.trace.txt.gz      49.295
+454.calculix-104B.trace.txt.gz 4.238
+445.gobmk-17B.trace.txt.gz     4.950
+459.GemsFDTD-1169B.trace.txt.gz 14.171
+444.namd-120B.trace.txt.gz     4.619
+483.xalancbmk-127B.trace.txt.gz 15.848
+458.sjeng-1088B.trace.txt.gz   4.779
+400.perlbench-41B.trace.txt.gz 4.128
+401.bzip2-226B.trace.txt.gz    5.555
+471.omnetpp-188B.trace.txt.gz  13.808
+456.hmmer-191B.trace.txt.gz    5.593
+465.tonto-1769B.trace.txt.gz   16.924
+481.wrf-1170B.trace.txt.gz     5.596
+435.gromacs-111B.trace.txt.gz  5.607
+403.gcc-16B.trace.txt.gz       16.247
+453.povray-887B.trace.txt.gz   5.282
+437.leslie3d-134B.trace.txt.gz 6.270
+470.lbm-1274B.trace.txt.gz     17.090
+464.h264ref-30B.trace.txt.gz   4.318
+462.libquantum-1343B.trace.txt.gz 14.101
+
+
+
+c)   Capacidad de L3: 1024kB, Asociatividad de L3: 16-way
+
+
+Procesando archivo: 410.bwaves-1963B.trace.txt.gz
+AMAT para 410.bwaves-1963B.trace.txt.gz: 10.623 ciclos
+Estadísticas del caché L1:
+        Total de misses:                16378 (1.638%)
+        Hit rate:                       0.984
+        Miss rate:                      0.016
+Estadísticas del caché L2:
+        Total de misses:                11571 (70.650%)
+        Hit rate:                       0.294
+        Miss rate:                      0.706
+Estadísticas del caché L3:
+        Total de misses:                11464 (99.075%)
+        Hit rate:                       0.009
+        Miss rate:                      0.991
+Procesando archivo: 473.astar-153B.trace.txt.gz
+AMAT para 473.astar-153B.trace.txt.gz: 5.414 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4651 (0.465%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2518 (54.139%)
+        Hit rate:                       0.459
+        Miss rate:                      0.541
+Estadísticas del caché L3:
+        Total de misses:                2415 (95.909%)
+        Hit rate:                       0.041
+        Miss rate:                      0.959
+Procesando archivo: 436.cactusADM-1804B.trace.txt.gz
+AMAT para 436.cactusADM-1804B.trace.txt.gz: 5.673 ciclos
+Estadísticas del caché L1:
+        Total de misses:                6485 (0.648%)
+        Hit rate:                       0.994
+        Miss rate:                      0.006
+Estadísticas del caché L2:
+        Total de misses:                2934 (45.243%)
+        Hit rate:                       0.548
+        Miss rate:                      0.452
+Estadísticas del caché L3:
+        Total de misses:                2839 (96.762%)
+        Hit rate:                       0.032
+        Miss rate:                      0.968
+Procesando archivo: 482.sphinx3-1100B.trace.txt.gz
+AMAT para 482.sphinx3-1100B.trace.txt.gz: 9.651 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13211 (1.321%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                10491 (79.411%)
+        Hit rate:                       0.206
+        Miss rate:                      0.794
+Estadísticas del caché L3:
+        Total de misses:                9726 (92.708%)
+        Hit rate:                       0.073
+        Miss rate:                      0.927
+Procesando archivo: 450.soplex-247B.trace.txt.gz
+AMAT para 450.soplex-247B.trace.txt.gz: 21.775 ciclos
+Estadísticas del caché L1:
+        Total de misses:                69106 (6.911%)
+        Hit rate:                       0.931
+        Miss rate:                      0.069
+Estadísticas del caché L2:
+        Total de misses:                48090 (69.589%)
+        Hit rate:                       0.304
+        Miss rate:                      0.696
+Estadísticas del caché L3:
+        Total de misses:                28121 (58.476%)
+        Hit rate:                       0.415
+        Miss rate:                      0.585
+Procesando archivo: 433.milc-127B.trace.txt.gz
+AMAT para 433.milc-127B.trace.txt.gz: 16.633 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22205 (2.220%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                22092 (99.491%)
+        Hit rate:                       0.005
+        Miss rate:                      0.995
+Estadísticas del caché L3:
+        Total de misses:                22083 (99.959%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 416.gamess-875B.trace.txt.gz
+AMAT para 416.gamess-875B.trace.txt.gz: 4.749 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13492 (1.349%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                1049 (7.775%)
+        Hit rate:                       0.922
+        Miss rate:                      0.078
+Estadísticas del caché L3:
+        Total de misses:                1048 (99.905%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+Procesando archivo: 429.mcf-184B.trace.txt.gz
+AMAT para 429.mcf-184B.trace.txt.gz: 44.566 ciclos
+Estadísticas del caché L1:
+        Total de misses:                107758 (10.776%)
+        Hit rate:                       0.892
+        Miss rate:                      0.108
+Estadísticas del caché L2:
+        Total de misses:                88187 (81.838%)
+        Hit rate:                       0.182
+        Miss rate:                      0.818
+Estadísticas del caché L3:
+        Total de misses:                67964 (77.068%)
+        Hit rate:                       0.229
+        Miss rate:                      0.771
+Procesando archivo: 454.calculix-104B.trace.txt.gz
+AMAT para 454.calculix-104B.trace.txt.gz: 4.238 ciclos
+Estadísticas del caché L1:
+        Total de misses:                428 (0.043%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                415 (96.963%)
+        Hit rate:                       0.030
+        Miss rate:                      0.970
+Estadísticas del caché L3:
+        Total de misses:                415 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 445.gobmk-17B.trace.txt.gz
+AMAT para 445.gobmk-17B.trace.txt.gz: 4.949 ciclos
+Estadísticas del caché L1:
+        Total de misses:                15038 (1.504%)
+        Hit rate:                       0.985
+        Miss rate:                      0.015
+Estadísticas del caché L2:
+        Total de misses:                1375 (9.144%)
+        Hit rate:                       0.909
+        Miss rate:                      0.091
+Estadísticas del caché L3:
+        Total de misses:                1373 (99.855%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+Procesando archivo: 459.GemsFDTD-1169B.trace.txt.gz
+AMAT para 459.GemsFDTD-1169B.trace.txt.gz: 14.167 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18209 (1.821%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17806 (97.787%)
+        Hit rate:                       0.022
+        Miss rate:                      0.978
+Estadísticas del caché L3:
+        Total de misses:                17761 (99.747%)
+        Hit rate:                       0.003
+        Miss rate:                      0.997
+Procesando archivo: 444.namd-120B.trace.txt.gz
+AMAT para 444.namd-120B.trace.txt.gz: 4.617 ciclos
+Estadísticas del caché L1:
+        Total de misses:                5336 (0.534%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                991 (18.572%)
+        Hit rate:                       0.814
+        Miss rate:                      0.186
+Estadísticas del caché L3:
+        Total de misses:                987 (99.596%)
+        Hit rate:                       0.004
+        Miss rate:                      0.996
+Procesando archivo: 483.xalancbmk-127B.trace.txt.gz
+AMAT para 483.xalancbmk-127B.trace.txt.gz: 15.835 ciclos
+Estadísticas del caché L1:
+        Total de misses:                21764 (2.176%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                20758 (95.378%)
+        Hit rate:                       0.046
+        Miss rate:                      0.954
+Estadísticas del caché L3:
+        Total de misses:                20657 (99.513%)
+        Hit rate:                       0.005
+        Miss rate:                      0.995
+Procesando archivo: 458.sjeng-1088B.trace.txt.gz
+AMAT para 458.sjeng-1088B.trace.txt.gz: 4.778 ciclos
+Estadísticas del caché L1:
+        Total de misses:                9126 (0.913%)
+        Hit rate:                       0.991
+        Miss rate:                      0.009
+Estadísticas del caché L2:
+        Total de misses:                1195 (13.094%)
+        Hit rate:                       0.869
+        Miss rate:                      0.131
+Estadísticas del caché L3:
+        Total de misses:                1194 (99.916%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+Procesando archivo: 400.perlbench-41B.trace.txt.gz
+AMAT para 400.perlbench-41B.trace.txt.gz: 4.128 ciclos
+Estadísticas del caché L1:
+        Total de misses:                236 (0.024%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                223 (94.492%)
+        Hit rate:                       0.055
+        Miss rate:                      0.945
+Estadísticas del caché L3:
+        Total de misses:                223 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 401.bzip2-226B.trace.txt.gz
+AMAT para 401.bzip2-226B.trace.txt.gz: 5.555 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18999 (1.900%)
+        Hit rate:                       0.981
+        Miss rate:                      0.019
+Estadísticas del caché L2:
+        Total de misses:                2396 (12.611%)
+        Hit rate:                       0.874
+        Miss rate:                      0.126
+Estadísticas del caché L3:
+        Total de misses:                2367 (98.790%)
+        Hit rate:                       0.012
+        Miss rate:                      0.988
+Procesando archivo: 471.omnetpp-188B.trace.txt.gz
+AMAT para 471.omnetpp-188B.trace.txt.gz: 13.707 ciclos
+Estadísticas del caché L1:
+        Total de misses:                37818 (3.782%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                17313 (45.780%)
+        Hit rate:                       0.542
+        Miss rate:                      0.458
+Estadísticas del caché L3:
+        Total de misses:                16429 (94.894%)
+        Hit rate:                       0.051
+        Miss rate:                      0.949
+Procesando archivo: 456.hmmer-191B.trace.txt.gz
+AMAT para 456.hmmer-191B.trace.txt.gz: 5.592 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4830 (0.483%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2745 (56.832%)
+        Hit rate:                       0.432
+        Miss rate:                      0.568
+Estadísticas del caché L3:
+        Total de misses:                2739 (99.781%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 465.tonto-1769B.trace.txt.gz
+AMAT para 465.tonto-1769B.trace.txt.gz: 14.542 ciclos
+Estadísticas del caché L1:
+        Total de misses:                28316 (2.832%)
+        Hit rate:                       0.972
+        Miss rate:                      0.028
+Estadísticas del caché L2:
+        Total de misses:                27790 (98.142%)
+        Hit rate:                       0.019
+        Miss rate:                      0.981
+Estadísticas del caché L3:
+        Total de misses:                17070 (61.425%)
+        Hit rate:                       0.386
+        Miss rate:                      0.614
+Procesando archivo: 481.wrf-1170B.trace.txt.gz
+AMAT para 481.wrf-1170B.trace.txt.gz: 5.463 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4204 (0.420%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                2760 (65.652%)
+        Hit rate:                       0.343
+        Miss rate:                      0.657
+Estadísticas del caché L3:
+        Total de misses:                2493 (90.326%)
+        Hit rate:                       0.097
+        Miss rate:                      0.903
+Procesando archivo: 435.gromacs-111B.trace.txt.gz
+AMAT para 435.gromacs-111B.trace.txt.gz: 5.607 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4773 (0.477%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2812 (58.915%)
+        Hit rate:                       0.411
+        Miss rate:                      0.589
+Estadísticas del caché L3:
+        Total de misses:                2762 (98.222%)
+        Hit rate:                       0.018
+        Miss rate:                      0.982
+Procesando archivo: 403.gcc-16B.trace.txt.gz
+AMAT para 403.gcc-16B.trace.txt.gz: 16.235 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22485 (2.248%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                21448 (95.388%)
+        Hit rate:                       0.046
+        Miss rate:                      0.954
+Estadísticas del caché L3:
+        Total de misses:                21356 (99.571%)
+        Hit rate:                       0.004
+        Miss rate:                      0.996
+Procesando archivo: 453.povray-887B.trace.txt.gz
+AMAT para 453.povray-887B.trace.txt.gz: 5.282 ciclos
+Estadísticas del caché L1:
+        Total de misses:                27060 (2.706%)
+        Hit rate:                       0.973
+        Miss rate:                      0.027
+Estadísticas del caché L2:
+        Total de misses:                1743 (6.441%)
+        Hit rate:                       0.936
+        Miss rate:                      0.064
+Estadísticas del caché L3:
+        Total de misses:                1705 (97.820%)
+        Hit rate:                       0.022
+        Miss rate:                      0.978
+Procesando archivo: 437.leslie3d-134B.trace.txt.gz
+AMAT para 437.leslie3d-134B.trace.txt.gz: 6.270 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4084 (0.408%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                3974 (97.307%)
+        Hit rate:                       0.027
+        Miss rate:                      0.973
+Estadísticas del caché L3:
+        Total de misses:                3966 (99.799%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 470.lbm-1274B.trace.txt.gz
+AMAT para 470.lbm-1274B.trace.txt.gz: 17.073 ciclos
+Estadísticas del caché L1:
+        Total de misses:                38377 (3.838%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                22667 (59.064%)
+        Hit rate:                       0.409
+        Miss rate:                      0.591
+Estadísticas del caché L3:
+        Total de misses:                22504 (99.281%)
+        Hit rate:                       0.007
+        Miss rate:                      0.993
+Procesando archivo: 464.h264ref-30B.trace.txt.gz
+AMAT para 464.h264ref-30B.trace.txt.gz: 4.318 ciclos
+Estadísticas del caché L1:
+        Total de misses:                610 (0.061%)
+        Hit rate:                       0.999
+        Miss rate:                      0.001
+Estadísticas del caché L2:
+        Total de misses:                555 (90.984%)
+        Hit rate:                       0.090
+        Miss rate:                      0.910
+Estadísticas del caché L3:
+        Total de misses:                555 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 462.libquantum-1343B.trace.txt.gz
+AMAT para 462.libquantum-1343B.trace.txt.gz: 14.099 ciclos
+Estadísticas del caché L1:
+        Total de misses:                17784 (1.778%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17664 (99.325%)
+        Hit rate:                       0.007
+        Miss rate:                      0.993
+Estadísticas del caché L3:
+        Total de misses:                17651 (99.926%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+
+Resultados de AMAT para cada archivo de traza:
+Archivo de Traza               AMAT (ciclos)
+410.bwaves-1963B.trace.txt.gz  10.623
+473.astar-153B.trace.txt.gz    5.414
+436.cactusADM-1804B.trace.txt.gz 5.673
+482.sphinx3-1100B.trace.txt.gz 9.651
+450.soplex-247B.trace.txt.gz   21.775
+433.milc-127B.trace.txt.gz     16.633
+416.gamess-875B.trace.txt.gz   4.749
+429.mcf-184B.trace.txt.gz      44.566
+454.calculix-104B.trace.txt.gz 4.238
+445.gobmk-17B.trace.txt.gz     4.949
+459.GemsFDTD-1169B.trace.txt.gz 14.167
+444.namd-120B.trace.txt.gz     4.617
+483.xalancbmk-127B.trace.txt.gz 15.835
+458.sjeng-1088B.trace.txt.gz   4.778
+400.perlbench-41B.trace.txt.gz 4.128
+401.bzip2-226B.trace.txt.gz    5.555
+471.omnetpp-188B.trace.txt.gz  13.707
+456.hmmer-191B.trace.txt.gz    5.592
+465.tonto-1769B.trace.txt.gz   14.542
+481.wrf-1170B.trace.txt.gz     5.463
+435.gromacs-111B.trace.txt.gz  5.607
+403.gcc-16B.trace.txt.gz       16.235
+453.povray-887B.trace.txt.gz   5.282
+437.leslie3d-134B.trace.txt.gz 6.270
+470.lbm-1274B.trace.txt.gz     17.073
+464.h264ref-30B.trace.txt.gz   4.318
+462.libquantum-1343B.trace.txt.gz 14.099
+
+
+d)   Capacidad de L3: 1024kB, Asociatividad de L3: 32-way
+
+
+Procesando archivo: 410.bwaves-1963B.trace.txt.gz
+AMAT para 410.bwaves-1963B.trace.txt.gz: 10.623 ciclos
+Estadísticas del caché L1:
+        Total de misses:                16378 (1.638%)
+        Hit rate:                       0.984
+        Miss rate:                      0.016
+Estadísticas del caché L2:
+        Total de misses:                11571 (70.650%)
+        Hit rate:                       0.294
+        Miss rate:                      0.706
+Estadísticas del caché L3:
+        Total de misses:                11464 (99.075%)
+        Hit rate:                       0.009
+        Miss rate:                      0.991
+Procesando archivo: 473.astar-153B.trace.txt.gz
+AMAT para 473.astar-153B.trace.txt.gz: 5.414 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4651 (0.465%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2518 (54.139%)
+        Hit rate:                       0.459
+        Miss rate:                      0.541
+Estadísticas del caché L3:
+        Total de misses:                2415 (95.909%)
+        Hit rate:                       0.041
+        Miss rate:                      0.959
+Procesando archivo: 436.cactusADM-1804B.trace.txt.gz
+AMAT para 436.cactusADM-1804B.trace.txt.gz: 5.667 ciclos
+Estadísticas del caché L1:
+        Total de misses:                6485 (0.648%)
+        Hit rate:                       0.994
+        Miss rate:                      0.006
+Estadísticas del caché L2:
+        Total de misses:                2934 (45.243%)
+        Hit rate:                       0.548
+        Miss rate:                      0.452
+Estadísticas del caché L3:
+        Total de misses:                2827 (96.353%)
+        Hit rate:                       0.036
+        Miss rate:                      0.964
+Procesando archivo: 482.sphinx3-1100B.trace.txt.gz
+AMAT para 482.sphinx3-1100B.trace.txt.gz: 9.651 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13211 (1.321%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                10491 (79.411%)
+        Hit rate:                       0.206
+        Miss rate:                      0.794
+Estadísticas del caché L3:
+        Total de misses:                9726 (92.708%)
+        Hit rate:                       0.073
+        Miss rate:                      0.927
+Procesando archivo: 450.soplex-247B.trace.txt.gz
+AMAT para 450.soplex-247B.trace.txt.gz: 21.714 ciclos
+Estadísticas del caché L1:
+        Total de misses:                69106 (6.911%)
+        Hit rate:                       0.931
+        Miss rate:                      0.069
+Estadísticas del caché L2:
+        Total de misses:                48090 (69.589%)
+        Hit rate:                       0.304
+        Miss rate:                      0.696
+Estadísticas del caché L3:
+        Total de misses:                27999 (58.222%)
+        Hit rate:                       0.418
+        Miss rate:                      0.582
+Procesando archivo: 433.milc-127B.trace.txt.gz
+AMAT para 433.milc-127B.trace.txt.gz: 16.633 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22205 (2.220%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                22092 (99.491%)
+        Hit rate:                       0.005
+        Miss rate:                      0.995
+Estadísticas del caché L3:
+        Total de misses:                22083 (99.959%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 416.gamess-875B.trace.txt.gz
+AMAT para 416.gamess-875B.trace.txt.gz: 4.749 ciclos
+Estadísticas del caché L1:
+        Total de misses:                13492 (1.349%)
+        Hit rate:                       0.987
+        Miss rate:                      0.013
+Estadísticas del caché L2:
+        Total de misses:                1049 (7.775%)
+        Hit rate:                       0.922
+        Miss rate:                      0.078
+Estadísticas del caché L3:
+        Total de misses:                1048 (99.905%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+Procesando archivo: 429.mcf-184B.trace.txt.gz
+AMAT para 429.mcf-184B.trace.txt.gz: 44.513 ciclos
+Estadísticas del caché L1:
+        Total de misses:                107758 (10.776%)
+        Hit rate:                       0.892
+        Miss rate:                      0.108
+Estadísticas del caché L2:
+        Total de misses:                88187 (81.838%)
+        Hit rate:                       0.182
+        Miss rate:                      0.818
+Estadísticas del caché L3:
+        Total de misses:                67858 (76.948%)
+        Hit rate:                       0.231
+        Miss rate:                      0.769
+Procesando archivo: 454.calculix-104B.trace.txt.gz
+AMAT para 454.calculix-104B.trace.txt.gz: 4.238 ciclos
+Estadísticas del caché L1:
+        Total de misses:                428 (0.043%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                415 (96.963%)
+        Hit rate:                       0.030
+        Miss rate:                      0.970
+Estadísticas del caché L3:
+        Total de misses:                415 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 445.gobmk-17B.trace.txt.gz
+AMAT para 445.gobmk-17B.trace.txt.gz: 4.949 ciclos
+Estadísticas del caché L1:
+        Total de misses:                15038 (1.504%)
+        Hit rate:                       0.985
+        Miss rate:                      0.015
+Estadísticas del caché L2:
+        Total de misses:                1375 (9.144%)
+        Hit rate:                       0.909
+        Miss rate:                      0.091
+Estadísticas del caché L3:
+        Total de misses:                1373 (99.855%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+Procesando archivo: 459.GemsFDTD-1169B.trace.txt.gz
+AMAT para 459.GemsFDTD-1169B.trace.txt.gz: 14.168 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18209 (1.821%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17806 (97.787%)
+        Hit rate:                       0.022
+        Miss rate:                      0.978
+Estadísticas del caché L3:
+        Total de misses:                17763 (99.759%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 444.namd-120B.trace.txt.gz
+AMAT para 444.namd-120B.trace.txt.gz: 4.619 ciclos
+Estadísticas del caché L1:
+        Total de misses:                5336 (0.534%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                991 (18.572%)
+        Hit rate:                       0.814
+        Miss rate:                      0.186
+Estadísticas del caché L3:
+        Total de misses:                991 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 483.xalancbmk-127B.trace.txt.gz
+AMAT para 483.xalancbmk-127B.trace.txt.gz: 15.836 ciclos
+Estadísticas del caché L1:
+        Total de misses:                21764 (2.176%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                20758 (95.378%)
+        Hit rate:                       0.046
+        Miss rate:                      0.954
+Estadísticas del caché L3:
+        Total de misses:                20658 (99.518%)
+        Hit rate:                       0.005
+        Miss rate:                      0.995
+Procesando archivo: 458.sjeng-1088B.trace.txt.gz
+AMAT para 458.sjeng-1088B.trace.txt.gz: 4.778 ciclos
+Estadísticas del caché L1:
+        Total de misses:                9126 (0.913%)
+        Hit rate:                       0.991
+        Miss rate:                      0.009
+Estadísticas del caché L2:
+        Total de misses:                1195 (13.094%)
+        Hit rate:                       0.869
+        Miss rate:                      0.131
+Estadísticas del caché L3:
+        Total de misses:                1193 (99.833%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 400.perlbench-41B.trace.txt.gz
+AMAT para 400.perlbench-41B.trace.txt.gz: 4.128 ciclos
+Estadísticas del caché L1:
+        Total de misses:                236 (0.024%)
+        Hit rate:                       1.000
+        Miss rate:                      0.000
+Estadísticas del caché L2:
+        Total de misses:                223 (94.492%)
+        Hit rate:                       0.055
+        Miss rate:                      0.945
+Estadísticas del caché L3:
+        Total de misses:                223 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 401.bzip2-226B.trace.txt.gz
+AMAT para 401.bzip2-226B.trace.txt.gz: 5.555 ciclos
+Estadísticas del caché L1:
+        Total de misses:                18999 (1.900%)
+        Hit rate:                       0.981
+        Miss rate:                      0.019
+Estadísticas del caché L2:
+        Total de misses:                2396 (12.611%)
+        Hit rate:                       0.874
+        Miss rate:                      0.126
+Estadísticas del caché L3:
+        Total de misses:                2367 (98.790%)
+        Hit rate:                       0.012
+        Miss rate:                      0.988
+Procesando archivo: 471.omnetpp-188B.trace.txt.gz
+AMAT para 471.omnetpp-188B.trace.txt.gz: 13.711 ciclos
+Estadísticas del caché L1:
+        Total de misses:                37818 (3.782%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                17313 (45.780%)
+        Hit rate:                       0.542
+        Miss rate:                      0.458
+Estadísticas del caché L3:
+        Total de misses:                16437 (94.940%)
+        Hit rate:                       0.051
+        Miss rate:                      0.949
+Procesando archivo: 456.hmmer-191B.trace.txt.gz
+AMAT para 456.hmmer-191B.trace.txt.gz: 5.593 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4830 (0.483%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2745 (56.832%)
+        Hit rate:                       0.432
+        Miss rate:                      0.568
+Estadísticas del caché L3:
+        Total de misses:                2740 (99.818%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 465.tonto-1769B.trace.txt.gz
+AMAT para 465.tonto-1769B.trace.txt.gz: 14.532 ciclos
+Estadísticas del caché L1:
+        Total de misses:                28316 (2.832%)
+        Hit rate:                       0.972
+        Miss rate:                      0.028
+Estadísticas del caché L2:
+        Total de misses:                27790 (98.142%)
+        Hit rate:                       0.019
+        Miss rate:                      0.981
+Estadísticas del caché L3:
+        Total de misses:                17050 (61.353%)
+        Hit rate:                       0.386
+        Miss rate:                      0.614
+Procesando archivo: 481.wrf-1170B.trace.txt.gz
+AMAT para 481.wrf-1170B.trace.txt.gz: 5.536 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4204 (0.420%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                2760 (65.652%)
+        Hit rate:                       0.343
+        Miss rate:                      0.657
+Estadísticas del caché L3:
+        Total de misses:                2640 (95.652%)
+        Hit rate:                       0.043
+        Miss rate:                      0.957
+Procesando archivo: 435.gromacs-111B.trace.txt.gz
+AMAT para 435.gromacs-111B.trace.txt.gz: 5.607 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4773 (0.477%)
+        Hit rate:                       0.995
+        Miss rate:                      0.005
+Estadísticas del caché L2:
+        Total de misses:                2812 (58.915%)
+        Hit rate:                       0.411
+        Miss rate:                      0.589
+Estadísticas del caché L3:
+        Total de misses:                2762 (98.222%)
+        Hit rate:                       0.018
+        Miss rate:                      0.982
+Procesando archivo: 403.gcc-16B.trace.txt.gz
+AMAT para 403.gcc-16B.trace.txt.gz: 16.235 ciclos
+Estadísticas del caché L1:
+        Total de misses:                22485 (2.248%)
+        Hit rate:                       0.978
+        Miss rate:                      0.022
+Estadísticas del caché L2:
+        Total de misses:                21448 (95.388%)
+        Hit rate:                       0.046
+        Miss rate:                      0.954
+Estadísticas del caché L3:
+        Total de misses:                21357 (99.576%)
+        Hit rate:                       0.004
+        Miss rate:                      0.996
+Procesando archivo: 453.povray-887B.trace.txt.gz
+AMAT para 453.povray-887B.trace.txt.gz: 5.282 ciclos
+Estadísticas del caché L1:
+        Total de misses:                27060 (2.706%)
+        Hit rate:                       0.973
+        Miss rate:                      0.027
+Estadísticas del caché L2:
+        Total de misses:                1743 (6.441%)
+        Hit rate:                       0.936
+        Miss rate:                      0.064
+Estadísticas del caché L3:
+        Total de misses:                1705 (97.820%)
+        Hit rate:                       0.022
+        Miss rate:                      0.978
+Procesando archivo: 437.leslie3d-134B.trace.txt.gz
+AMAT para 437.leslie3d-134B.trace.txt.gz: 6.270 ciclos
+Estadísticas del caché L1:
+        Total de misses:                4084 (0.408%)
+        Hit rate:                       0.996
+        Miss rate:                      0.004
+Estadísticas del caché L2:
+        Total de misses:                3974 (97.307%)
+        Hit rate:                       0.027
+        Miss rate:                      0.973
+Estadísticas del caché L3:
+        Total de misses:                3966 (99.799%)
+        Hit rate:                       0.002
+        Miss rate:                      0.998
+Procesando archivo: 470.lbm-1274B.trace.txt.gz
+AMAT para 470.lbm-1274B.trace.txt.gz: 17.073 ciclos
+Estadísticas del caché L1:
+        Total de misses:                38377 (3.838%)
+        Hit rate:                       0.962
+        Miss rate:                      0.038
+Estadísticas del caché L2:
+        Total de misses:                22667 (59.064%)
+        Hit rate:                       0.409
+        Miss rate:                      0.591
+Estadísticas del caché L3:
+        Total de misses:                22504 (99.281%)
+        Hit rate:                       0.007
+        Miss rate:                      0.993
+Procesando archivo: 464.h264ref-30B.trace.txt.gz
+AMAT para 464.h264ref-30B.trace.txt.gz: 4.318 ciclos
+Estadísticas del caché L1:
+        Total de misses:                610 (0.061%)
+        Hit rate:                       0.999
+        Miss rate:                      0.001
+Estadísticas del caché L2:
+        Total de misses:                555 (90.984%)
+        Hit rate:                       0.090
+        Miss rate:                      0.910
+Estadísticas del caché L3:
+        Total de misses:                555 (100.000%)
+        Hit rate:                       0.000
+        Miss rate:                      1.000
+Procesando archivo: 462.libquantum-1343B.trace.txt.gz
+AMAT para 462.libquantum-1343B.trace.txt.gz: 14.099 ciclos
+Estadísticas del caché L1:
+        Total de misses:                17784 (1.778%)
+        Hit rate:                       0.982
+        Miss rate:                      0.018
+Estadísticas del caché L2:
+        Total de misses:                17664 (99.325%)
+        Hit rate:                       0.007
+        Miss rate:                      0.993
+Estadísticas del caché L3:
+        Total de misses:                17651 (99.926%)
+        Hit rate:                       0.001
+        Miss rate:                      0.999
+
+Resultados de AMAT para cada archivo de traza:
+Archivo de Traza               AMAT (ciclos)
+410.bwaves-1963B.trace.txt.gz  10.623
+473.astar-153B.trace.txt.gz    5.414
+436.cactusADM-1804B.trace.txt.gz 5.667
+482.sphinx3-1100B.trace.txt.gz 9.651
+450.soplex-247B.trace.txt.gz   21.714
+433.milc-127B.trace.txt.gz     16.633
+416.gamess-875B.trace.txt.gz   4.749
+429.mcf-184B.trace.txt.gz      44.513
+454.calculix-104B.trace.txt.gz 4.238
+445.gobmk-17B.trace.txt.gz     4.949
+459.GemsFDTD-1169B.trace.txt.gz 14.168
+444.namd-120B.trace.txt.gz     4.619
+483.xalancbmk-127B.trace.txt.gz 15.836
+458.sjeng-1088B.trace.txt.gz   4.778
+400.perlbench-41B.trace.txt.gz 4.128
+401.bzip2-226B.trace.txt.gz    5.555
+471.omnetpp-188B.trace.txt.gz  13.711
+456.hmmer-191B.trace.txt.gz    5.593
+465.tonto-1769B.trace.txt.gz   14.532
+481.wrf-1170B.trace.txt.gz     5.536
+435.gromacs-111B.trace.txt.gz  5.607
+403.gcc-16B.trace.txt.gz       16.235
+453.povray-887B.trace.txt.gz   5.282
+437.leslie3d-134B.trace.txt.gz 6.270
+470.lbm-1274B.trace.txt.gz     17.073
+464.h264ref-30B.trace.txt.gz   4.318
+462.libquantum-1343B.trace.txt.gz 14.099
